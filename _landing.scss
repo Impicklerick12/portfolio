@@ -7,37 +7,6 @@
     align-items: center;
     justify-content: center;
 
-    .header {
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: 0px;
-        background-color: red;
-        width: 100%;
-        height: 3rem;
-        z-index: 2;
-        overflow: hidden;
-
-        ul {
-            display: flex;
-            list-style-type: none;
-            flex-wrap: wrap;
-
-            li a {
-                font-family: 'Montserrat', sans-serif;
-                color: white;
-                font-size: 20px;
-                text-decoration: none;
-                padding: 2rem;
-
-                &:hover {
-                    background-color: black;
-                }
-            }
-        }
-    }
-
     h1, h2 {
         border: 2px solid red;
         color: white;
@@ -54,18 +23,24 @@
         padding-bottom: 1rem;;
     }
 
-    .icons {
-        padding: 1rem;
-        font-size: 1.5rem;
+}
 
-        a {
-            color: white;
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
 
-            @:hover {
-                transform: scale(1.1);
-                color: #ed6a5a
-            }
-        }
+    .about-info, img {
+        border: 2px solid red;
+    }
+
+    .about-info {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 200px;
+        margin-left: 5rem;
     }
 }
 
