@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#landing {
+  background-image: url(./docs/waterfall_website.jpg);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-size: cover;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#landing .header {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0px;
+  background-color: red;
+  width: 100%;
+  height: 3rem;
+  z-index: 2;
+  overflow: hidden;
+}
+
+#landing .header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#landing .header ul li a {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 2rem;
+}
+
+#landing .header ul li a:hover {
+  background-color: black;
+}
+
+#landing h1, #landing h2 {
+  border: 2px solid red;
+  color: white;
+}
+
+#landing h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+
+#landing h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+#landing .icons {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+#landing .icons a {
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
