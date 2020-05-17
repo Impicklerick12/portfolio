@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap');
 
+$phone-width: 600px;
+$tablet-width: 768px;
+$desktop-above-width: 992px;
+
 * {
     margin: 0;
     padding: 0;
@@ -12,14 +16,14 @@
 
 #header {
   position: fixed;
+  top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 0px;
   background-color: red;
   width: 100%;
   height: 3rem;
-  z-index: 2;
+  z-index: 1;
   overflow: hidden;
 
   ul {
@@ -58,5 +62,7 @@
       padding: 2rem;
     }
 }
-  
-@import "landing"
+
+@import "landing";
+@import "web-dev";
+

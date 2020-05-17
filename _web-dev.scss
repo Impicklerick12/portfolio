@@ -1,0 +1,32 @@
+.web-dev {
+    background-color: lightblue;
+    background-image: url();
+    height: 100vh;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    flex-direction: column;
+    padding-top: 3rem;
+
+    .projects-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1, p {
+                border: 2px solid red;
+                padding-top: 2rem;
+            }
+        }
+    }
+
+    .projects {
+        
+    }
+}
