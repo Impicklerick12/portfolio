@@ -6,12 +6,12 @@
           box-sizing: border-box;
 }
 
-h1 {
+h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
 #header {
-  position: fixed;
+  position: absolute;
   top: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,6 +74,9 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   padding: 2rem;
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
 }
 
 #landing {
@@ -82,6 +85,7 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-position: center;
   background-size: cover;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -101,14 +105,45 @@ h1 {
 }
 
 #landing h1 {
-  font-size: 5rem;
+  font-size: 10vw;
   font-weight: 600;
-  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  #landing h1 {
+    font-size: 5vw;
+  }
 }
 
 #landing h2 {
-  font-size: 2rem;
-  padding-bottom: 1rem;
+  font-size: 5vw;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  #landing h2 {
+    font-size: 3vw;
+  }
+}
+
+#landing .fab {
+  font-size: 10vw;
+  margin: 0 3vw;
+  color: white;
+}
+
+#landing .fab:hover {
+  color: darkorange;
+}
+
+@media screen and (min-width: 992px) {
+  #landing .fab {
+    font-size: 5vw;
+    margin: 0 3vw;
+  }
 }
 
 .about {
@@ -121,11 +156,15 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 2rem 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 100%;
+  padding: 2rem 1rem;
 }
 
 .about .about-info, .about img {
   border: 2px solid red;
+  width: 100%;
 }
 
 .about .about-info {
@@ -139,13 +178,14 @@ h1 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 200px;
-  margin-left: 5rem;
+  margin-left: 2rem;
+  padding-top: 2rem;
 }
 
 .web-dev {
   background-color: lightblue;
   background-image: url();
-  height: 100vh;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,36 +199,266 @@ h1 {
 }
 
 .web-dev .projects-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.web-dev .projects-text div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
 }
 
 .web-dev .projects-text div h1, .web-dev .projects-text div p {
   border: 2px solid red;
-  padding-top: 2rem;
+  padding: 1rem 0;
+}
+
+.web-dev .projects .project1, .web-dev .projects .project2 {
+  border: 2px solid red;
+  padding: 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.web-dev .projects .project1 img, .web-dev .projects .project2 img {
+  width: 100%;
+}
+
+.web-dev .projects .project1 h2, .web-dev .projects .project1 img, .web-dev .projects .project1 p, .web-dev .projects .project2 h2, .web-dev .projects .project2 img, .web-dev .projects .project2 p {
+  padding: 1rem 0;
+}
+
+.web-dev .projects .project1 a, .web-dev .projects .project2 a {
+  color: white;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  .web-dev .projects .project1, .web-dev .projects .project2 {
+    max-width: 45vw;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .web-dev .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.web-dev .skills {
+  border: 2px solid red;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.web-dev .skills .skills-objects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.web-dev .skills .skills-objects img {
+  max-width: 1rem;
+}
+
+h1, h2, p {
+  color: black;
+}
+
+.blogs-page {
+  background-color: lightblue;
+  background-image: url();
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background-size: cover;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 3rem;
+}
+
+.blogs-page h1 {
+  text-align: center;
+}
+
+.blogs-page .blogs .blogs-each {
+  border: 2px solid red;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blogs-page .blogs .blogs-each img {
+  width: 100%;
+}
+
+.blogs-page .blogs .blogs-each h2, .blogs-page .blogs .blogs-each img, .blogs-page .blogs .blogs-each p {
+  padding: 1rem 0;
+}
+
+.blogs-page .blogs .blogs-each a {
+  color: white;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  .blogs-page .blogs .blogs-each {
+    max-width: 45vw;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .blogs-page .blogs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+h1, h2, p {
+  color: black;
+}
+
+.contact-page {
+  background-color: lightblue;
+  background-image: url();
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background-size: cover;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 3rem;
+}
+
+.contact-page h2 {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.contact-page .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.contact-page .contact .contact-text img {
+  width: 100%;
+}
+
+.contact-page .contact .contact-text p {
+  padding-top: 1rem;
+}
+
+.contact-page .contact .contact-text .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-page .contact .contact-text .icons .fab {
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.contact-page .contact .contact-form {
+  width: 100%;
+}
+
+.contact-page .contact .contact-form .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: yellow;
+}
+
+.contact-page .contact .contact-form .info p {
+  margin-left: 0px;
+  background-color: orange;
+  border: 2px solid red;
+  min-width: 30%;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.contact-page .contact .contact-form .info input {
+  margin-right: 0px;
+}
+
+.contact-page .contact .contact-form .info p, .contact-page .contact .contact-form .info input {
+  margin: 0.5rem 0;
+}
+
+.contact-page .contact .contact-form .message textarea {
+  margin: 0.5rem 0;
+  width: 100%;
+  height: 5rem;
+}
+
+.contact-page .contact .contact-form .submit-button {
+  text-align: center;
+}
+
+.contact-page .contact .contact-form .submit-button .submit {
+  background-color: orchid;
+  padding: .5rem;
+}
+
+h1, h2, p {
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */

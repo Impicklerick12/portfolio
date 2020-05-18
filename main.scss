@@ -3,6 +3,7 @@
 $phone-width: 600px;
 $tablet-width: 768px;
 $desktop-above-width: 992px;
+$border: 2px solid red;
 
 * {
     margin: 0;
@@ -10,12 +11,12 @@ $desktop-above-width: 992px;
     box-sizing: border-box;
   }
 
-  h1{
+  h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
   }
 
 #header {
-  position: fixed;
+  position: absolute;
   top: 0px;
   display: flex;
   justify-content: center;
@@ -60,9 +61,14 @@ $desktop-above-width: 992px;
     a {
       display: flex;
       padding: 2rem;
+      color: white;
+      font-size: 2rem;
+      text-decoration: none;
     }
 }
 
 @import "landing";
 @import "web-dev";
+@import "blogs";
+@import "contact"
 

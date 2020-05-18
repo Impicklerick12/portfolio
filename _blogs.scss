@@ -1,4 +1,4 @@
-.web-dev {
+.blogs-page {
     background-color: lightblue;
     background-image: url();
     height: 100%;
@@ -8,23 +8,15 @@
     flex-direction: column;
     padding-top: 3rem;
 
-    .projects-text {
+    h1 {
         text-align: center;
-
-        div {
-
-            h1, p {
-                border: $border;
-                padding: 1rem 0;
-            }
-        }
     }
 
-    .projects {
+    .blogs {
 
-        .project1, .project2 {
+        .blogs-each {
             border: $border;
-            padding: 1rem 1rem;
+            padding: 1rem;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -52,24 +44,6 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
-        }
-    }
-
-    .skills {
-        border: $border;
-        text-align: center;
-        padding-top: 1rem;
-
-        .skills-objects {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            padding: 1rem;
-
-            img {
-                max-width: 1rem;
-            }
         }
     }
 }
