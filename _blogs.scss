@@ -36,6 +36,12 @@
 
             @media screen and (min-width: 700px) {
                 max-width: 45vw;
+                margin: 2rem 1rem 0 1rem;
+            }
+
+            @media screen and (min-width: 990px) {
+                max-width: 25vw;
+                justify-content: space-around;
             }
         }
 
@@ -43,7 +49,7 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: center;
         }
     }
 }

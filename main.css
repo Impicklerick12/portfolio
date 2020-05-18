@@ -104,6 +104,10 @@ h1, h2, h3 {
   color: white;
 }
 
+#landing span {
+  color: darkorange;
+}
+
 #landing h1 {
   font-size: 10vw;
   font-weight: 600;
@@ -336,6 +340,15 @@ h1, h2, p {
 @media screen and (min-width: 700px) {
   .blogs-page .blogs .blogs-each {
     max-width: 45vw;
+    margin: 2rem 1rem 0 1rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .blogs-page .blogs .blogs-each {
+    max-width: 25vw;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -350,8 +363,9 @@ h1, h2, p {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
