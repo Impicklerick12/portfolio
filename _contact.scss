@@ -19,6 +19,9 @@
         padding: 1rem;
 
         .contact-text {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
 
             img {
                 width: 100%;
@@ -81,6 +84,28 @@
                 padding: .5rem;
                 }
             }
+        }
+
+        @media screen and (min-width: 700px) {
+
+            .contact-text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    max-width: 40vw;
+                    margin-right: 2rem; 
+                }
+                p {
+                    max-width: 40vw;
+                }
+                .icons {
+                    .fab {
+                        font-size: 2rem;
+                    }
+                }
+            }    
         }
     }
 

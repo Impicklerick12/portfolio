@@ -134,7 +134,7 @@ h1, h2, h3 {
 }
 
 #landing .fab {
-  font-size: 10vw;
+  font-size: 7vw;
   margin: 0 3vw;
   color: white;
 }
@@ -145,7 +145,7 @@ h1, h2, h3 {
 
 @media screen and (min-width: 992px) {
   #landing .fab {
-    font-size: 5vw;
+    font-size: 3vw;
     margin: 0 3vw;
   }
 }
@@ -403,6 +403,18 @@ h1, h2, p {
   padding: 1rem;
 }
 
+.contact-page .contact .contact-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .contact-page .contact .contact-text img {
   width: 100%;
 }
@@ -470,6 +482,30 @@ h1, h2, p {
 .contact-page .contact .contact-form .submit-button .submit {
   background-color: orchid;
   padding: .5rem;
+}
+
+@media screen and (min-width: 700px) {
+  .contact-page .contact .contact-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-page .contact .contact-text img {
+    max-width: 40vw;
+    margin-right: 2rem;
+  }
+  .contact-page .contact .contact-text p {
+    max-width: 40vw;
+  }
+  .contact-page .contact .contact-text .icons .fab {
+    font-size: 2rem;
+  }
 }
 
 h1, h2, p {
