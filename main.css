@@ -28,7 +28,7 @@ body {
 
 #header ul {
   float: right;
-  margin-right: 60px;
+  margin-right: 40px;
 }
 
 #header ul li {
@@ -88,7 +88,7 @@ body {
     line-height: 30px;
   }
   #header ul li a {
-    font-size: 20px;
+    font-size: 40px;
   }
   #header ul li a:hover, #header ul li a.active {
     background: none;
@@ -126,6 +126,12 @@ body {
   color: white;
   font-size: 2rem;
   text-decoration: none;
+}
+
+@media screen and (min-width: 700px) {
+  #footer {
+    position: fixed;
+  }
 }
 
 #landing {

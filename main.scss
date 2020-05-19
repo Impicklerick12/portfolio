@@ -32,7 +32,7 @@ body {
 
   ul {
       float: right;
-      margin-right: 60px;
+      margin-right: 40px;
 
       li {
           display: inline-block;
@@ -47,10 +47,6 @@ body {
               border-radius: 3px;
               font-family: 'Montserrat', sans-serif;
 
-              @media and screen (min-width: 700px) {
-                font-size: 40px;
-              }
-              
               &.active, &:hover {
                   background: #456276;
                   transition: .5s;
@@ -95,7 +91,7 @@ body {
               line-height: 30px;
 
               a {
-                  font-size: 20px;
+                  font-size: 40px;
 
                   &:hover,&.active {
                       background: none;
@@ -129,6 +125,10 @@ body {
       color: white;
       font-size: 2rem;
       text-decoration: none;
+    }
+
+    @media screen and (min-width: 700px) {
+      position: fixed;
     }
 }
 
