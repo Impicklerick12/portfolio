@@ -2,11 +2,12 @@
     background-color: lightblue;
     background-image: url();
     height: 100%;
+    width: 100%;
     display: flex;
     position: relative;
     background-size: cover;
     flex-direction: column;
-    padding-top: 3rem;
+    padding-top: 80px;
 
     .projects-text {
         text-align: center;

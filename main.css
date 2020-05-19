@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
 h1, h2, h3 {
@@ -12,81 +15,93 @@ h1, h2, h3 {
 }
 
 #header {
-  position: absolute;
-  top: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: red;
+  position: fixed;
+  background: #0082e6;
+  height: 80px;
   width: 100%;
-  height: 3rem;
   z-index: 1;
-  overflow: hidden;
 }
 
-#header .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#header .logo div h1 {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 700;
-  font-size: 60px;
-}
-
-#header .logo .ty {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-  background-color: black;
-  letter-spacing: -5px;
-  width: 3rem;
-  height: 3rem;
-  padding-right: 7px;
-}
-
-#header .logo .visual {
-  margin-left: 10px;
-  letter-spacing: 3px;
+#header label.logo {
+  color: #f2f2f2;
+  font-size: 33px;
+  line-height: 80px;
+  padding: 0 50px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
 }
 
 #header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style-type: none;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  float: right;
+  margin-right: 60px;
+}
+
+#header ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 2px;
 }
 
 #header ul li a {
-  font-family: 'Montserrat', sans-serif;
-  color: white;
+  color: #f2f2f2;
+  font-weight: 500;
   font-size: 20px;
-  text-decoration: none;
-  padding: 2rem;
+  padding: 7px 13px;
+  border-radius: 3px;
+  font-family: 'Poppins', sans-serif;
 }
 
-#header ul li a:hover {
-  background-color: black;
+#header ul li a.active, #header ul li a:hover {
+  background: #1b9bff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#header .checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#header #check {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+  #header .checkbtn {
+    display: block;
+    margin-right: 40px;
+  }
+  #header ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  #header ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  #header ul li a {
+    font-size: 20px;
+  }
+  #header ul li a:hover, #header ul li a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #header #check:checked ~ ul {
+    left: 0;
+  }
 }
 
 #footer {
@@ -121,6 +136,7 @@ h1, h2, h3 {
 #landing {
   background-image: url(./docs/waterfall_website.jpg);
   height: 100vh;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,6 +245,7 @@ h1, h2, h3 {
   background-color: lightblue;
   background-image: url();
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,7 +255,7 @@ h1, h2, h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 3rem;
+  padding-top: 80px;
 }
 
 .web-dev .projects-text {
@@ -332,6 +349,7 @@ h1, h2, p {
   background-color: lightblue;
   background-image: url();
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,7 +359,7 @@ h1, h2, p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 3rem;
+  padding-top: 80px;
 }
 
 .blogs-page h1 {
@@ -416,6 +434,7 @@ h1, h2, p {
   background-color: lightblue;
   background-image: url();
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,7 +444,7 @@ h1, h2, p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 3rem;
+  padding-top: 80px;
 }
 
 .contact-page h2 {

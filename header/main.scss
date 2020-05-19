@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+#header {
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+
+    label.logo {
+    color: #f2f2f2;
+    font-size: 33px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    }
+
+    ul {
+        float: right;
+        margin-right: 60px;
+
+        li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 2px;
+
+            a {
+                color: #f2f2f2;
+                font-weight: 500;
+                font-size: 20px;
+                padding: 7px 13px;
+                border-radius: 3px;
+                font-family: 'Poppins', sans-serif;
+
+                &.active, &:hover {
+                    background: #1b9bff;
+                    transition: .5s;
+                }
+            }
+        }
+    }
+
+    .checkbtn {
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+
+    #check {
+        display: none;
+    }
+
+    @media (max-width: 1050px){
+        .checkbtn {
+          display: block;
+          margin-right: 40px;
+        }
+
+        ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #2c3e50;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+
+            li {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+
+                a {
+                    font-size: 20px;
+
+                    &:hover,&.active {
+                        background: none;
+                        color: #0082e6;
+                    }
+                }
+            }
+        }
+
+        #check:checked ~ ul {
+            left: 0;
+        }
+    }
+}
+
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
