@@ -25,19 +25,10 @@ body {
 
 #header {
   position: fixed;
-  background: #0082e6;
+  background: #233139;
   height: 80px;
   width: 100%;
   z-index: 1;
-
-  label.logo {
-  color: #f2f2f2;
-  font-size: 33px;
-  line-height: 80px;
-  padding: 0 50px;
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
-  }
 
   ul {
       float: right;
@@ -49,15 +40,19 @@ body {
           margin: 0 2px;
 
           a {
-              color: #f2f2f2;
+              color: white;
               font-weight: 500;
               font-size: 20px;
               padding: 7px 13px;
               border-radius: 3px;
-              font-family: 'Poppins', sans-serif;
+              font-family: 'Montserrat', sans-serif;
 
+              @media and screen (min-width: 700px) {
+                font-size: 40px;
+              }
+              
               &.active, &:hover {
-                  background: #1b9bff;
+                  background: #456276;
                   transition: .5s;
               }
           }
@@ -88,7 +83,7 @@ body {
           position: fixed;
           width: 100%;
           height: 100vh;
-          background: #2c3e50;
+          background: #63819A;
           top: 80px;
           left: -100%;
           text-align: center;
@@ -104,7 +99,7 @@ body {
 
                   &:hover,&.active {
                       background: none;
-                      color: #0082e6;
+                      color: #456276;
                   }
               }
           }
