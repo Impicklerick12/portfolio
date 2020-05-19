@@ -15,17 +15,18 @@
 
     .contact {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         padding: 1rem;
+
+        img {
+            width: 100%;
+        }
 
         .contact-text {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-
-            img {
-                width: 100%;
-            }
 
             p {
                 padding-top: 1rem;
@@ -39,13 +40,17 @@
                     font-size: 3rem;
                     padding: 1rem 2rem;
                     color: white;
+
+                    &:hover {
+                        color: darkorange;
+                    }
             
                 }
             }
         }   
 
         .contact-form {
-            width: 100%;
+            width: 80%;
 
             .info {
                 display: flex;
@@ -88,29 +93,59 @@
 
         @media screen and (min-width: 700px) {
 
-            .contact-text {
+            .image-and-text {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
+                margin-bottom: 2rem;
+            
                 img {
                     max-width: 40vw;
-                    margin-right: 2rem; 
+                    margin: 0 2vw; 
                 }
-                p {
-                    max-width: 40vw;
+
+                .contact-text {
+                    display: flex;
+                    max-width: 30vw;
+                    margin-left: 2vw;
+
+                    p {
+                        max-width: 40vw;
+                        padding: 0;
+                    }
+
+                    .icons {
+                        .fab {
+                            font-size: 2rem;
+                            padding: 16px 40px 16px 0;
+                        }
+                    }
+                } 
+            }
+            
+            .contact-form {
+                max-width: 50vw;
+
+                .info {
+                    justify-content: space-around;
                 }
-                .icons {
-                    .fab {
-                        font-size: 2rem;
+
+                .message {
+                    text-align: center;
+
+                    textarea {
+                        width: 80%;
                     }
                 }
-            }    
+            }
         }
+
     }
-
+    @media screen and (min-width: 700px) {
+        height: 100vh;
+    }
 }
 
-h1, h2, p {
-    color: black;
-}
+// h1, h2, p {
+//     color: black;
+// }

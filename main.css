@@ -398,9 +398,16 @@ h1, h2, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 1rem;
+}
+
+.contact-page .contact img {
+  width: 100%;
 }
 
 .contact-page .contact .contact-text {
@@ -413,10 +420,6 @@ h1, h2, p {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.contact-page .contact .contact-text img {
-  width: 100%;
 }
 
 .contact-page .contact .contact-text p {
@@ -438,8 +441,12 @@ h1, h2, p {
   color: white;
 }
 
+.contact-page .contact .contact-text .icons .fab:hover {
+  color: darkorange;
+}
+
 .contact-page .contact .contact-form {
-  width: 100%;
+  width: 80%;
 }
 
 .contact-page .contact .contact-form .info {
@@ -485,7 +492,7 @@ h1, h2, p {
 }
 
 @media screen and (min-width: 700px) {
-  .contact-page .contact .contact-text {
+  .contact-page .contact .image-and-text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -495,20 +502,45 @@ h1, h2, p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 2rem;
   }
-  .contact-page .contact .contact-text img {
+  .contact-page .contact .image-and-text img {
     max-width: 40vw;
-    margin-right: 2rem;
+    margin: 0 2vw;
   }
-  .contact-page .contact .contact-text p {
+  .contact-page .contact .image-and-text .contact-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 30vw;
+    margin-left: 2vw;
+  }
+  .contact-page .contact .image-and-text .contact-text p {
     max-width: 40vw;
+    padding: 0;
   }
-  .contact-page .contact .contact-text .icons .fab {
+  .contact-page .contact .image-and-text .contact-text .icons .fab {
     font-size: 2rem;
+    padding: 16px 40px 16px 0;
+  }
+  .contact-page .contact .contact-form {
+    max-width: 50vw;
+  }
+  .contact-page .contact .contact-form .info {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .contact-page .contact .contact-form .message {
+    text-align: center;
+  }
+  .contact-page .contact .contact-form .message textarea {
+    width: 80%;
   }
 }
 
-h1, h2, p {
-  color: black;
+@media screen and (min-width: 700px) {
+  .contact-page {
+    height: 100vh;
+  }
 }
 /*# sourceMappingURL=main.css.map */
