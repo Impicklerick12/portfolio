@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700;800;900&display=swap');
 
 $phone-width: 600px;
 $tablet-width: 768px;
@@ -26,6 +27,34 @@ $border: 2px solid red;
   height: 3rem;
   z-index: 1;
   overflow: hidden;
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    div h1 {
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 700;
+      font-size: 60px;
+    }
+    
+    .ty {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-color: black;
+      letter-spacing: -5px;
+      width: 3rem;
+      height: 3rem;
+      padding-right: 7px;
+    }
+    
+    .visual {
+      margin-left: 10px;
+      letter-spacing: 3px;
+    }
+  }
 
   ul {
       display: flex;

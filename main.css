@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +28,44 @@ h1, h2, h3 {
   height: 3rem;
   z-index: 1;
   overflow: hidden;
+}
+
+#header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .logo div h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+#header .logo .ty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background-color: black;
+  letter-spacing: -5px;
+  width: 3rem;
+  height: 3rem;
+  padding-right: 7px;
+}
+
+#header .logo .visual {
+  margin-left: 10px;
+  letter-spacing: 3px;
 }
 
 #header ul {
