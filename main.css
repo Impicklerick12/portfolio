@@ -131,6 +131,10 @@ body {
   text-decoration: none;
 }
 
+#footer a:hover {
+  color: darkorange;
+}
+
 #landing {
   background-image: url(./docs/waterfall_website.jpg);
   height: 100vh;
@@ -232,6 +236,8 @@ body {
           flex-direction: column;
   max-width: 300px;
   margin-left: 2rem;
+  background-color: white;
+  border-radius: 8px;
 }
 
 .about .about-info .resume {
@@ -240,6 +246,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   padding: 10px 0;
+  margin: 1rem 0 1rem 1rem;
   border-radius: 4px;
   font-family: 'Montserrat', sans-serif;
   cursor: pointer;
@@ -259,7 +266,7 @@ body {
 }
 
 .about .about-info h2, .about .about-info p, .about .about-info a {
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 @media screen and (max-width: 1050px) {
@@ -299,7 +306,10 @@ body {
 
 .web-dev .projects .project1, .web-dev .projects .project2 {
   border: 2px solid red;
-  padding: 1rem 1rem;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,26 +335,13 @@ body {
   font-size: 1rem;
 }
 
-@media screen and (min-width: 700px) {
-  .web-dev .projects .project1, .web-dev .projects .project2 {
-    max-width: 45vw;
-  }
+.web-dev .projects .project1 .fab, .web-dev .projects .project2 .fab {
+  color: #233139;
+  font-size: 2rem;
 }
 
-@media screen and (min-width: 700px) {
-  .web-dev .projects {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
+.web-dev .projects .project1 .fab:hover, .web-dev .projects .project2 .fab:hover {
+  color: darkorange;
 }
 
 .web-dev .skills {
@@ -369,6 +366,36 @@ body {
 
 .web-dev .skills .skills-objects img {
   max-width: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  .web-dev .projects-text {
+    max-width: 40vw;
+    margin-left: 30vw;
+  }
+  .web-dev .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .web-dev .projects .project1, .web-dev .projects .project2 {
+    max-width: 45vw;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .web-dev .projects .project1, .web-dev .projects .project2 {
+    max-width: 30vw;
+  }
 }
 
 h1, h2, p {
@@ -408,6 +435,9 @@ h1, h2, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 1rem;
+  background-color: white;
+  border-radius: 8px;
 }
 
 .blogs-page .blogs .blogs-each img {
@@ -426,13 +456,12 @@ h1, h2, p {
 @media screen and (min-width: 700px) {
   .blogs-page .blogs .blogs-each {
     max-width: 45vw;
-    margin: 2rem 1rem 0 1rem;
   }
 }
 
 @media screen and (min-width: 990px) {
   .blogs-page .blogs .blogs-each {
-    max-width: 25vw;
+    max-width: 30vw;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }

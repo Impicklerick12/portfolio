@@ -11,6 +11,9 @@
 
     .projects-text {
         text-align: center;
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: center;
 
             h1, p {
                 border: $border;
@@ -22,7 +25,10 @@
 
         .project1, .project2 {
             border: $border;
-            padding: 1rem 1rem;
+            background-color: white;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -40,17 +46,32 @@
                 font-size: 1rem;
             }
 
-            @media screen and (min-width: 700px) {
-                max-width: 45vw;
+            .fab {
+                color: #233139;
+                font-size: 2rem;
+
+                &:hover {
+                    color: darkorange;
+                }
             }
         }
 
-        @media screen and (min-width: 700px) {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
+        // @media screen and (min-width: 700px) {
+        //     display: flex;
+        //     flex-direction: row;
+        //     flex-wrap: wrap;
+        //     justify-content: center;
+
+        //     .project1, .project2 {
+        //         max-width: 45vw;
+        //     }
+        // }
+
+        // @media screen and (min-width: 1050px) {
+        //     .project1, .project2 {
+        //     max-width: 30vw;
+        //     }
+        // }
     }
 
     .skills {
@@ -67,6 +88,33 @@
 
             img {
                 max-width: 1rem;
+            }
+        }
+    }
+
+    @media screen and (min-width: 700px) {
+
+        .projects-text {
+            max-width: 40vw;
+            margin-left: 30vw;
+        }
+
+        .projects {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .project1, .project2 {
+                max-width: 45vw;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1050px) {
+        .projects {
+            .project1, .project2 {
+            max-width: 30vw;
             }
         }
     }
