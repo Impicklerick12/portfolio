@@ -10,7 +10,7 @@
     justify-content: center;
 
     h1, h2 {
-        border: $border;
+        // border: $border;
         color: white;
     }
 
@@ -64,9 +64,9 @@
     max-width: 100%;
     padding: 2rem 1rem;
 
-    .about-info, img {
-        border: $border;
-    }
+    // .about-info, img {
+    //     border: $border;
+    // }
 
     img {
         max-width: 30vw;
@@ -78,17 +78,35 @@
         max-width: 300px;
         margin-left: 2rem;
 
+        .resume {
+            color: white;
+            background-color: #456276;
+            font-weight: 500;
+            font-size: 20px;
+            padding: 10px 0;
+            border-radius: 4px;
+            font-family: 'Montserrat', sans-serif;
+            cursor: pointer;
+            max-width: 50%;
+            text-align: center;
+
+            &:hover {
+                color: #456276;
+                background-color: darkorange;
+            }
+        }
+
         @media screen and (max-width: 750px) {
             margin-left: 0.5rem;
         }
 
-        h2,  p, a {
+        h2, p, a {
             padding: 1rem 0;
         }
     }
 
     @media screen and (max-width: 1050px) {
-        padding: 0;
+        padding: 1rem;
 
         img {
             max-width: 350px;
