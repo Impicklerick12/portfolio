@@ -305,7 +305,6 @@ body {
 }
 
 .web-dev .projects .project1, .web-dev .projects .project2 {
-  border: 2px solid red;
   background-color: white;
   border-radius: 8px;
   padding: 1rem;
@@ -320,6 +319,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 10px 10px 10px 0px #505050;
+          box-shadow: 10px 10px 10px 0px #505050;
 }
 
 .web-dev .projects .project1 img, .web-dev .projects .project2 img {
@@ -423,7 +424,6 @@ h1, h2, p {
 }
 
 .blogs-page .blogs .blogs-each {
-  border: 2px solid red;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,6 +438,8 @@ h1, h2, p {
   margin: 1rem;
   background-color: white;
   border-radius: 8px;
+  -webkit-box-shadow: 10px 10px 10px 0px #505050;
+          box-shadow: 10px 10px 10px 0px #505050;
 }
 
 .blogs-page .blogs .blogs-each img {
@@ -536,10 +538,15 @@ h1, h2, p {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-color: white;
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 10px 10px 10px 0px #505050;
+          box-shadow: 10px 10px 10px 0px #505050;
 }
 
 .contact-page .contact .contact-text p {
-  padding-top: 1rem;
+  padding: 1rem 0;
 }
 
 .contact-page .contact .contact-text .icons {
@@ -554,7 +561,7 @@ h1, h2, p {
 .contact-page .contact .contact-text .icons .fab {
   font-size: 3rem;
   padding: 1rem 2rem;
-  color: white;
+  color: #233139;
 }
 
 .contact-page .contact .contact-text .icons .fab:hover {
