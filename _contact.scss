@@ -1,5 +1,5 @@
 .contact-page {
-    background-color: lightblue;
+    background-color: $background;
     background-image: url();
     height: 100%;
     width: 100%;
@@ -22,6 +22,7 @@
 
         img {
             width: 100%;
+            border-radius: 8px;
         }
 
         .contact-text {
@@ -30,6 +31,7 @@
             flex-wrap: wrap;
             background-color: white;
             padding: 1rem 1rem;
+            margin-top: 1rem;
             border-radius: 8px;
             box-shadow: 10px 10px 10px 0px rgba(80,80,80,1);
 
@@ -42,7 +44,7 @@
                 justify-content: center;
             
                 .fab {
-                    font-size: 3rem;
+                    font-size: 2rem;
                     padding: 1rem 2rem;
                     color: #233139;
 
@@ -56,23 +58,28 @@
 
         .contact-form {
             width: 80%;
+            margin-top: 2rem;
+            background-color: white;
+            padding: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 10px 10px 10px 0px rgba(80,80,80,1);
 
             .info {
                 display: flex;
-                justify-content: space-between;
-                background-color: yellow;
+                justify-content: flex-start;
 
                 p {
                     margin-left: 0px;
-                    background-color: orange;
-                    border: $border;
                     min-width: 30%;
                     text-align: center;
                     border-radius: 4px;
+                    color: darkorange;
                 }
 
                 input {
                     margin-right: 0px;
+                    background-color: #233139;
+                    color: white;
                 }
 
                 p, input {
@@ -81,9 +88,11 @@
             }
 
             .message textarea {
+                background-color: #233139;
                 margin: 0.5rem 0;
                 width: 100%;
                 height: 5rem;
+                color: white;
             }
 
             .submit-button {
@@ -146,6 +155,7 @@
         }
 
     }
+
     @media screen and (min-width: 700px) {
         height: 100vh;
     }

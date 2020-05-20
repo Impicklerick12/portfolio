@@ -1,5 +1,5 @@
 .web-dev {
-    background-color: lightblue;
+    background-color: $background;
     background-image: url();
     height: 100%;
     width: 100%;
@@ -87,8 +87,19 @@
             flex-wrap: wrap;
             padding: 1rem;
 
-            img {
-                max-width: 1rem;
+            .objects {
+                margin: 7vw;
+            
+                .fab {
+                    font-size: 10vw;
+                }
+                img {
+                    max-width: 9vw;
+                }
+                h3 {
+                    font-size: 3vw;
+                    font-weight: 600;
+                }
             }
         }
     }
@@ -108,6 +119,29 @@
 
             .project1, .project2 {
                 max-width: 45vw;
+            }
+        }
+
+        .skills {
+
+            .skills-objects {
+
+                .objects {
+
+                    margin: 5vw;
+
+                    .fab {
+                        font-size: 5vw;
+                    }
+                    
+                    img {
+                        max-width: 5vw;
+                    }
+
+                    h3 {
+                        font-size: 2vw;
+                    }
+                }
             }
         }
     }

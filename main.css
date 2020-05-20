@@ -14,7 +14,7 @@ h1, h2, h3 {
 }
 
 body {
-  background-color: lightblue;
+  background-color: #8CA7C2;
 }
 
 #header {
@@ -224,6 +224,7 @@ body {
 
 .about img {
   max-width: 30vw;
+  border-radius: 8px;
 }
 
 .about .about-info {
@@ -238,6 +239,8 @@ body {
   margin-left: 2rem;
   background-color: white;
   border-radius: 8px;
+  -webkit-box-shadow: 10px 10px 10px 0px #505050;
+          box-shadow: 10px 10px 10px 0px #505050;
 }
 
 .about .about-info .resume {
@@ -279,7 +282,7 @@ body {
 }
 
 .web-dev {
-  background-color: lightblue;
+  background-color: #8CA7C2;
   background-image: url();
   height: 100%;
   width: 100%;
@@ -365,8 +368,21 @@ body {
   padding: 1rem;
 }
 
-.web-dev .skills .skills-objects img {
-  max-width: 1rem;
+.web-dev .skills .skills-objects .objects {
+  margin: 7vw;
+}
+
+.web-dev .skills .skills-objects .objects .fab {
+  font-size: 10vw;
+}
+
+.web-dev .skills .skills-objects .objects img {
+  max-width: 9vw;
+}
+
+.web-dev .skills .skills-objects .objects h3 {
+  font-size: 3vw;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 700px) {
@@ -390,6 +406,18 @@ body {
   }
   .web-dev .projects .project1, .web-dev .projects .project2 {
     max-width: 45vw;
+  }
+  .web-dev .skills .skills-objects .objects {
+    margin: 5vw;
+  }
+  .web-dev .skills .skills-objects .objects .fab {
+    font-size: 5vw;
+  }
+  .web-dev .skills .skills-objects .objects img {
+    max-width: 5vw;
+  }
+  .web-dev .skills .skills-objects .objects h3 {
+    font-size: 2vw;
   }
 }
 
@@ -491,7 +519,7 @@ h1, h2, p {
 }
 
 .contact-page {
-  background-color: lightblue;
+  background-color: #8CA7C2;
   background-image: url();
   height: 100%;
   width: 100%;
@@ -526,6 +554,7 @@ h1, h2, p {
 
 .contact-page .contact img {
   width: 100%;
+  border-radius: 8px;
 }
 
 .contact-page .contact .contact-text {
@@ -540,6 +569,7 @@ h1, h2, p {
       flex-wrap: wrap;
   background-color: white;
   padding: 1rem 1rem;
+  margin-top: 1rem;
   border-radius: 8px;
   -webkit-box-shadow: 10px 10px 10px 0px #505050;
           box-shadow: 10px 10px 10px 0px #505050;
@@ -559,7 +589,7 @@ h1, h2, p {
 }
 
 .contact-page .contact .contact-text .icons .fab {
-  font-size: 3rem;
+  font-size: 2rem;
   padding: 1rem 2rem;
   color: #233139;
 }
@@ -570,29 +600,35 @@ h1, h2, p {
 
 .contact-page .contact .contact-form {
   width: 80%;
+  margin-top: 2rem;
+  background-color: white;
+  padding: 2rem 0;
+  border-radius: 8px;
+  -webkit-box-shadow: 10px 10px 10px 0px #505050;
+          box-shadow: 10px 10px 10px 0px #505050;
 }
 
 .contact-page .contact .contact-form .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: yellow;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .contact-page .contact .contact-form .info p {
   margin-left: 0px;
-  background-color: orange;
-  border: 2px solid red;
   min-width: 30%;
   text-align: center;
   border-radius: 4px;
+  color: darkorange;
 }
 
 .contact-page .contact .contact-form .info input {
   margin-right: 0px;
+  background-color: #233139;
+  color: white;
 }
 
 .contact-page .contact .contact-form .info p, .contact-page .contact .contact-form .info input {
@@ -600,9 +636,11 @@ h1, h2, p {
 }
 
 .contact-page .contact .contact-form .message textarea {
+  background-color: #233139;
   margin: 0.5rem 0;
   width: 100%;
   height: 5rem;
+  color: white;
 }
 
 .contact-page .contact .contact-form .submit-button {
