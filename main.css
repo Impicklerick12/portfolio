@@ -135,6 +135,12 @@ body {
   color: darkorange;
 }
 
+@media screen and (max-width: 1050px) {
+  #footer a {
+    color: darkorange;
+  }
+}
+
 #landing {
   background-image: url(./docs/waterfall_website.jpg);
   height: 100vh;
@@ -236,7 +242,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 300px;
-  margin-left: 2rem;
+  margin: 1rem;
   background-color: white;
   border-radius: 8px;
   -webkit-box-shadow: 10px 10px 10px 0px #505050;
@@ -303,7 +309,6 @@ body {
 }
 
 .web-dev .projects-text h1, .web-dev .projects-text p {
-  border: 2px solid red;
   padding: 1rem 0;
 }
 
@@ -349,7 +354,6 @@ body {
 }
 
 .web-dev .skills {
-  border: 2px solid red;
   text-align: center;
   padding-top: 1rem;
 }

@@ -134,6 +134,12 @@ body {
           color: darkorange;
       }
     }
+
+    @media screen and (max-width: 1050px) {
+        a {
+            color: darkorange;
+        }
+    }
 }
 
 @import "landing";
