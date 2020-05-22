@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700;800;900&display=swap');
 // @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
 
 $phone-width: 600px;
 $tablet-width: 768px;
@@ -9,15 +10,19 @@ $border: 2px solid red;
 $background: #8CA7C2;
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
 h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
 }
 
 body {
@@ -25,90 +30,91 @@ body {
 }
 
 #header {
-  position: fixed;
-  background: #233139;
-  height: 50px;
-  width: 100%;
-  z-index: 1;
+    position: fixed;
+    background: #233139;
+    height: 50px;
+    width: 100%;
+    z-index: 1;
 
-  ul {
-      float: right;
-      margin-right: 40px;
-
-      li {
-          display: inline-block;
-          line-height: 50px;
-          margin: 0 2px;
-
-          a {
-              color: white;
-              font-weight: 500;
-              font-size: 20px;
-              padding: 7px 13px;
-              border-radius: 4px;
-              font-family: 'Montserrat', sans-serif;
-
-              &.active, &:hover {
-                  background: #456276;
-                  transition: .5s;
-              }
-          }
-      }
-  }
-
-  .checkbtn {
-      font-size: 30px;
-      color: white;
-      float: right;
-      line-height: 50px;
-      margin-right: 40px;
-      cursor: pointer;
-      display: none;
-  }
-
-  #check {
-      display: none;
-  }
-
-  @media (max-width: 1050px){
-      .checkbtn {
-        display: block;
+    ul {
+        float: right;
         margin-right: 40px;
-      }
 
-      ul {
-          position: fixed;
-          width: 100%;
-          height: 100vh;
-          background: #63819A;
-          top: 50px;
-          left: -100%;
-          text-align: center;
-          transition: all 0.8s;
-          transition-timing-function: ease-out;
+        li {
+            display: inline-block;
+            line-height: 50px;
+            margin: 0 2px;
 
-          li {
-              display: block;
-              margin: 10vh 0;
-              line-height: 30px;
+            a {
+                color: white;
+                font-weight: 500;
+                font-size: 20px;
+                padding: 7px 13px;
+                border-radius: 4px;
+                font-family: 'Montserrat', sans-serif;
 
-              a {
-                  font-size: 4vw;
-                  color: darkorange;
-                  font-weight: 600;
+                &.active, &:hover {
+                    background: #456276;
+                    transition: .5s;
+                }
+            }
+        }
+    }
 
-                  &:hover,&.active {
-                      background: none;
-                      color: #456276;
-                  }
-              }
-          }
-      }
+    .checkbtn {
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 50px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
 
-      #check:checked ~ ul {
-          left: 0;
-      }
-  }
+    #check {
+        display: none;
+    }
+
+    @media (max-width: 1050px){
+
+        .checkbtn {
+            display: block;
+            margin-right: 40px;
+        }
+
+        ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #63819A;
+            top: 50px;
+            left: -100%;
+            text-align: center;
+            transition: all 0.8s;
+            transition-timing-function: ease-out;
+
+            li {
+                display: block;
+                margin: 10vh 0;
+                line-height: 30px;
+
+                a {
+                    font-size: 4vw;
+                    color: darkorange;
+                    font-weight: 600;
+
+                    &:hover,&.active {
+                        background: none;
+                        color: #456276;
+                    }
+                }
+            }
+        }
+
+        #check:checked ~ ul {
+            left: 0;
+        }
+    }
 }
 
 #footer {
