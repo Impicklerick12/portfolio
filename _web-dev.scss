@@ -12,11 +12,12 @@
     .projects-text {
         h1, p {
             // border: $border;
-            padding: 1rem 0;
+            padding: 1rem;
         }
-        
+
         h1 {
             text-align: center;
+            margin-top: 16px;
         }
     }
 
@@ -79,18 +80,22 @@
         text-align: center;
         padding-top: 1rem;
 
+        h1 {
+            padding: 1rem;
+        }
+
         .skills-objects {
             display: flex;
             justify-content: space-around;
             align-items: center;
             flex-wrap: wrap;
-            padding: 1rem;
+            padding: 0 1rem;
 
             .objects {
                 margin: 7vw;
             
                 .fab {
-                    font-size: 10vw;
+                    font-size: 50px;
                 }
                 img {
                     max-width: 9vw;
@@ -106,8 +111,8 @@
     @media screen and (min-width: 700px) {
 
         .projects-text {
-            max-width: 40vw;
-            margin-left: 30vw;
+            max-width: 50vw;
+            margin-left: 25vw;
         }
 
         .projects {
@@ -128,17 +133,13 @@
                 .objects {
 
                     margin: 5vw;
-
-                    .fab {
-                        font-size: 5vw;
-                    }
                     
                     img {
                         max-width: 5vw;
                     }
 
                     h3 {
-                        font-size: 2vw;
+                        font-size: 25px;
                     }
                 }
             }

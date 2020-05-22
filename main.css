@@ -325,11 +325,12 @@ body {
 }
 
 .web-dev .projects-text h1, .web-dev .projects-text p {
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 .web-dev .projects-text h1 {
   text-align: center;
+  margin-top: 16px;
 }
 
 .web-dev .projects .project1, .web-dev .projects .project2 {
@@ -378,6 +379,10 @@ body {
   padding-top: 1rem;
 }
 
+.web-dev .skills h1 {
+  padding: 1rem;
+}
+
 .web-dev .skills .skills-objects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -389,7 +394,7 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .web-dev .skills .skills-objects .objects {
@@ -397,7 +402,7 @@ body {
 }
 
 .web-dev .skills .skills-objects .objects .fab {
-  font-size: 10vw;
+  font-size: 50px;
 }
 
 .web-dev .skills .skills-objects .objects img {
@@ -411,8 +416,8 @@ body {
 
 @media screen and (min-width: 700px) {
   .web-dev .projects-text {
-    max-width: 40vw;
-    margin-left: 30vw;
+    max-width: 50vw;
+    margin-left: 25vw;
   }
   .web-dev .projects {
     display: -webkit-box;
@@ -434,14 +439,11 @@ body {
   .web-dev .skills .skills-objects .objects {
     margin: 5vw;
   }
-  .web-dev .skills .skills-objects .objects .fab {
-    font-size: 5vw;
-  }
   .web-dev .skills .skills-objects .objects img {
     max-width: 5vw;
   }
   .web-dev .skills .skills-objects .objects h3 {
-    font-size: 2vw;
+    font-size: 25px;
   }
 }
 
