@@ -36,6 +36,7 @@
 
             img {
                 width: 100%;
+                // max-height: 500px;
             }
 
             h2, img, p {
@@ -150,6 +151,26 @@
         .projects {
             .project1, .project2 {
             max-width: 30vw;
+            padding: 20px;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+            }
+        }
+
+        .skills {
+            h1 {
+                margin-top: 2rem;
+            }
+            .skills-objects {
+                justify-content: center;
+                .objects {
+                    margin: 3vw 4vw;
+                    img {
+                        max-width: 50px;
+                    }
+                }
             }
         }
     }
