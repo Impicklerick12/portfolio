@@ -21,8 +21,17 @@ h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
 p {
     font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.5px;
 }
 
 body {
@@ -138,6 +147,7 @@ body {
 
       &:hover {
           color: darkorange;
+          transition: .5s;
       }
     }
 

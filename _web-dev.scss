@@ -10,15 +10,14 @@
     padding-top: 50px;
 
     .projects-text {
-        text-align: center;
-        // display: flex;
-        // flex-direction: row;
-        // justify-content: center;
-
-            h1, p {
-                // border: $border;
-                padding: 1rem 0;
-            }
+        h1, p {
+            // border: $border;
+            padding: 1rem 0;
+        }
+        
+        h1 {
+            text-align: center;
+        }
     }
 
     .projects {

@@ -14,8 +14,17 @@ h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
 p {
   font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.5px;
 }
 
 body {
@@ -138,6 +147,8 @@ body {
 
 #footer a:hover {
   color: darkorange;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 @media screen and (max-width: 1050px) {
@@ -208,6 +219,8 @@ body {
 
 #landing .fab:hover {
   color: darkorange;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 @media screen and (min-width: 992px) {
@@ -271,6 +284,8 @@ body {
 .about .about-info .resume:hover {
   color: #456276;
   background-color: darkorange;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 @media screen and (max-width: 750px) {
@@ -309,12 +324,12 @@ body {
   padding-top: 50px;
 }
 
-.web-dev .projects-text {
-  text-align: center;
-}
-
 .web-dev .projects-text h1, .web-dev .projects-text p {
   padding: 1rem 0;
+}
+
+.web-dev .projects-text h1 {
+  text-align: center;
 }
 
 .web-dev .projects .project1, .web-dev .projects .project2 {
@@ -544,11 +559,6 @@ h1, h2, p {
   padding-top: 50px;
 }
 
-.contact-page h2 {
-  text-align: center;
-  padding-top: 1rem;
-}
-
 .contact-page .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,7 +572,7 @@ h1, h2, p {
 }
 
 .contact-page .contact img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 8px;
 }
 
@@ -608,8 +618,18 @@ h1, h2, p {
 }
 
 .contact-page .contact .contact-form {
-  width: 80%;
-  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 2rem 0;
   background-color: white;
   padding: 2rem 0;
   border-radius: 8px;
@@ -621,35 +641,79 @@ h1, h2, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 80%;
+  margin-left: 10%;
 }
 
 .contact-page .contact .contact-form .info p {
   margin-left: 0px;
   min-width: 30%;
-  text-align: center;
   border-radius: 4px;
   color: darkorange;
+  font-weight: 600;
 }
 
-.contact-page .contact .contact-form .info input {
-  margin-right: 0px;
+.contact-page .contact .contact-form .info input[type=text] {
   background-color: #233139;
   color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  width: 100%;
+  border-style: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  padding: 5px;
 }
 
 .contact-page .contact .contact-form .info p, .contact-page .contact .contact-form .info input {
   margin: 0.5rem 0;
 }
 
+.contact-page .contact .contact-form .message {
+  text-align: center;
+  margin: 1rem 0;
+}
+
 .contact-page .contact .contact-form .message textarea {
   background-color: #233139;
-  margin: 0.5rem 0;
-  width: 100%;
+  border-radius: 4px;
+  width: 80%;
   height: 5rem;
   color: white;
+}
+
+.contact-page .contact .contact-form .message textarea::-webkit-input-placeholder {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.contact-page .contact .contact-form .message textarea:-ms-input-placeholder {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.contact-page .contact .contact-form .message textarea::-ms-input-placeholder {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.contact-page .contact .contact-form .message textarea::placeholder {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.contact-page .contact .contact-form .message [type=text] {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  padding: 5px;
+  letter-spacing: 0.5px;
 }
 
 .contact-page .contact .contact-form .submit-button {
@@ -657,8 +721,21 @@ h1, h2, p {
 }
 
 .contact-page .contact .contact-form .submit-button .submit {
-  background-color: orchid;
-  padding: .5rem;
+  background-color: #456276;
+  color: white;
+  padding: 1rem;
+  border-radius: 4px;
+  border-style: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.contact-page .contact .contact-form .submit-button .submit:hover {
+  background-color: darkorange;
+  color: #456276;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 @media screen and (min-width: 700px) {
@@ -675,7 +752,7 @@ h1, h2, p {
     margin-bottom: 2rem;
   }
   .contact-page .contact .image-and-text img {
-    max-width: 40vw;
+    width: 40vw;
     margin: 0 2vw;
   }
   .contact-page .contact .image-and-text .contact-text {
@@ -689,16 +766,20 @@ h1, h2, p {
     max-width: 40vw;
     padding: 0;
   }
+  .contact-page .contact .image-and-text .contact-text h2 {
+    padding-bottom: 1rem;
+  }
   .contact-page .contact .image-and-text .contact-text .icons .fab {
     font-size: 2rem;
     padding: 16px 40px 16px 0;
   }
   .contact-page .contact .contact-form {
-    max-width: 50vw;
+    max-width: 500px;
   }
   .contact-page .contact .contact-form .info {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .contact-page .contact .contact-form .message {
     text-align: center;
