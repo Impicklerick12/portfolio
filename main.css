@@ -28,7 +28,8 @@ p {
 }
 
 body {
-  background-color: #8CA7C2;
+  background: url(./docs/waterfall_website.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 
 #header {
@@ -158,7 +159,6 @@ body {
 }
 
 #landing {
-  background-image: url(./docs/waterfall_website.jpg);
   height: 100vh;
   width: 100%;
   display: -webkit-box;
@@ -243,7 +243,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 100%;
-  padding: 2rem 1rem;
+  padding: 0 1rem 2rem 1rem;
 }
 
 .about img {
@@ -263,8 +263,8 @@ body {
   margin: 1rem;
   background-color: white;
   border-radius: 8px;
-  -webkit-box-shadow: 10px 10px 10px 0px #505050;
-          box-shadow: 10px 10px 10px 0px #505050;
+  -webkit-box-shadow: 10px 10px 10px 0px #141414;
+          box-shadow: 10px 10px 10px 0px #141414;
 }
 
 .about .about-info .resume {
@@ -308,10 +308,6 @@ body {
 }
 
 .web-dev {
-  background-color: #8CA7C2;
-  background-image: url();
-  height: 100%;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,6 +327,7 @@ body {
 .web-dev .projects-text h1 {
   text-align: center;
   margin-top: 16px;
+  color: white;
 }
 
 .web-dev .projects .project1, .web-dev .projects .project2 {
@@ -348,8 +345,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 10px 10px 10px 0px #505050;
-          box-shadow: 10px 10px 10px 0px #505050;
+  -webkit-box-shadow: 10px 10px 10px 0px #141414;
+          box-shadow: 10px 10px 10px 0px #141414;
 }
 
 .web-dev .projects .project1 img, .web-dev .projects .project2 img {
@@ -381,6 +378,7 @@ body {
 
 .web-dev .skills h1 {
   padding: 1rem;
+  color: white;
 }
 
 .web-dev .skills .skills-objects {
@@ -412,6 +410,7 @@ body {
 .web-dev .skills .skills-objects .objects h3 {
   font-size: 3vw;
   font-weight: 600;
+  color: white;
 }
 
 @media screen and (min-width: 700px) {
@@ -444,6 +443,12 @@ body {
   }
   .web-dev .skills .skills-objects .objects h3 {
     font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .web-dev {
+    height: calc(100vh - 3rem);
   }
 }
 
@@ -511,8 +516,8 @@ h1, h2, p {
   margin: 1rem;
   background-color: white;
   border-radius: 8px;
-  -webkit-box-shadow: 10px 10px 10px 0px #505050;
-          box-shadow: 10px 10px 10px 0px #505050;
+  -webkit-box-shadow: 10px 10px 10px 0px #141414;
+          box-shadow: 10px 10px 10px 0px #141414;
 }
 
 .blogs-page .blogs .blogs-each img {
@@ -564,8 +569,6 @@ h1, h2, p {
 }
 
 .contact-page {
-  background-color: #8CA7C2;
-  background-image: url();
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -611,8 +614,8 @@ h1, h2, p {
   padding: 1rem 1rem;
   margin-top: 1rem;
   border-radius: 8px;
-  -webkit-box-shadow: 10px 10px 10px 0px #505050;
-          box-shadow: 10px 10px 10px 0px #505050;
+  -webkit-box-shadow: 10px 10px 10px 0px #141414;
+          box-shadow: 10px 10px 10px 0px #141414;
 }
 
 .contact-page .contact .contact-text p {
@@ -636,6 +639,8 @@ h1, h2, p {
 
 .contact-page .contact .contact-text .icons .fab:hover {
   color: darkorange;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .contact-page .contact .contact-form {
@@ -654,8 +659,8 @@ h1, h2, p {
   background-color: white;
   padding: 2rem 0;
   border-radius: 8px;
-  -webkit-box-shadow: 10px 10px 10px 0px #505050;
-          box-shadow: 10px 10px 10px 0px #505050;
+  -webkit-box-shadow: 10px 10px 10px 0px #141414;
+          box-shadow: 10px 10px 10px 0px #141414;
 }
 
 .contact-page .contact .contact-form .info {
@@ -750,6 +755,7 @@ h1, h2, p {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   letter-spacing: 0.5px;
+  cursor: pointer;
 }
 
 .contact-page .contact .contact-form .submit-button .submit:hover {

@@ -1,8 +1,9 @@
 .web-dev {
-    background-color: $background;
-    background-image: url();
-    height: 100%;
-    width: 100%;
+    // background-color: $background;
+    // background-image: url();
+    // height: 100%;
+    // width: 100%;
+    // height: calc(100vh - 3rem);
     display: flex;
     position: relative;
     background-size: cover;
@@ -18,6 +19,7 @@
         h1 {
             text-align: center;
             margin-top: 16px;
+            color: white;
         }
     }
 
@@ -32,7 +34,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            box-shadow: 10px 10px 10px 0px rgba(80,80,80,1);
+            box-shadow: 10px 10px 10px 0px rgba(20,20,20,1);
 
             img {
                 width: 100%;
@@ -83,6 +85,7 @@
 
         h1 {
             padding: 1rem;
+            color: white;
         }
 
         .skills-objects {
@@ -104,6 +107,7 @@
                 h3 {
                     font-size: 3vw;
                     font-weight: 600;
+                    color: white;
                 }
             }
         }
@@ -147,7 +151,12 @@
         }
     }
 
+    @media screen and (min-width: 1000px) {
+        height: calc(100vh - 3rem);
+    }
+
     @media screen and (min-width: 1050px) {
+
         .projects {
             .project1, .project2 {
             max-width: 30vw;

@@ -1,5 +1,5 @@
 #landing {
-    background-image: url(./docs/waterfall_website.jpg);
+    // background-image: url(./docs/waterfall_website.jpg);
     height: 100vh;
     width: 100%;
     display: flex;
@@ -58,12 +58,13 @@
 }
 
 .about {
+    // height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     max-width: 100%;
-    padding: 2rem 1rem;
+    padding: 0 1rem 2rem 1rem;
 
     // .about-info, img {
     //     border: $border;
@@ -81,7 +82,7 @@
         margin: 1rem;
         background-color: white;
         border-radius: 8px;
-        box-shadow: 10px 10px 10px 0px rgba(80,80,80,1);
+        box-shadow: 10px 10px 10px 0px rgba(20,20,20,1);
 
         .resume {
             color: white;
