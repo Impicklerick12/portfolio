@@ -330,6 +330,12 @@ body {
   color: white;
 }
 
+.web-dev .projects .project1 {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .web-dev .projects .project1, .web-dev .projects .project2 {
   background-color: white;
   border-radius: 8px;
@@ -355,11 +361,6 @@ body {
 
 .web-dev .projects .project1 h2, .web-dev .projects .project1 img, .web-dev .projects .project1 p, .web-dev .projects .project2 h2, .web-dev .projects .project2 img, .web-dev .projects .project2 p {
   padding: 1rem 0;
-}
-
-.web-dev .projects .project1 a, .web-dev .projects .project2 a {
-  color: white;
-  font-size: 1rem;
 }
 
 .web-dev .projects .project1 .fab, .web-dev .projects .project2 .fab {
@@ -435,6 +436,10 @@ body {
   .web-dev .projects .project1, .web-dev .projects .project2 {
     max-width: 45vw;
   }
+  .web-dev .projects .project1 img {
+    padding-bottom: 20px;
+    background-color: #1b1b1b;
+  }
   .web-dev .skills .skills-objects .objects {
     margin: 5vw;
   }
@@ -479,6 +484,12 @@ body {
 
 h1, h2, p {
   color: black;
+}
+
+@media screen and (min-width: 2000px) {
+  #footer {
+    position: fixed;
+  }
 }
 
 .blogs-page {

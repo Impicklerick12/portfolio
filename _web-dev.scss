@@ -25,6 +25,9 @@
 
     .projects {
 
+        .project1 {
+            justify-content: space-between;
+        }
         .project1, .project2 {
             // border: $border;
             background-color: white;
@@ -43,11 +46,6 @@
 
             h2, img, p {
                 padding: 1rem 0;
-            }
-
-            a {
-                color: white;
-                font-size: 1rem;
             }
 
             .fab {
@@ -129,6 +127,13 @@
             .project1, .project2 {
                 max-width: 45vw;
             }
+
+            .project1 {
+                img {
+                    padding-bottom: 20px;
+                    background-color: rgb(27, 27, 27);
+                }
+            }
         }
 
         .skills {
@@ -159,12 +164,12 @@
 
         .projects {
             .project1, .project2 {
-            max-width: 30vw;
-            padding: 20px;
+                max-width: 30vw;
+                padding: 20px;
 
-            &:hover {
-                transform: scale(1.05);
-            }
+                &:hover {
+                    transform: scale(1.05);
+                }
             }
         }
 
@@ -187,4 +192,10 @@
 
 h1, h2, p {
     color: black;
+}
+
+@media screen and (min-width: 2000px) {
+    #footer {
+        position: fixed;
+    }
 }
