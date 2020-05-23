@@ -230,7 +230,32 @@ body {
   }
 }
 
-.about {
+#landing .arrow-down {
+  position: absolute;
+  margin: 15vw auto;
+}
+
+#landing .arrow-down .fas {
+  font-size: 3vw;
+  color: white;
+}
+
+#landing .arrow-down .fas:hover {
+  color: darkorange;
+  -webkit-animation: fly-up 1s;
+          animation: fly-up 1s;
+}
+
+@media screen and (max-width: 770px) {
+  #landing .arrow-down {
+    margin: 50vw auto;
+  }
+  #landing .arrow-down .fas {
+    font-size: 5vw;
+  }
+}
+
+#about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,12 +271,12 @@ body {
   padding: 0 1rem 2rem 1rem;
 }
 
-.about img {
+#about img {
   max-width: 30vw;
   border-radius: 8px;
 }
 
-.about .about-info {
+#about .about-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,7 +292,7 @@ body {
           box-shadow: 10px 10px 10px 0px #141414;
 }
 
-.about .about-info .resume {
+#about .about-info .resume {
   color: white;
   background-color: #456276;
   font-weight: 500;
@@ -281,7 +306,7 @@ body {
   text-align: center;
 }
 
-.about .about-info .resume:hover {
+#about .about-info .resume:hover {
   color: #456276;
   background-color: darkorange;
   -webkit-transition: .5s;
@@ -289,26 +314,26 @@ body {
 }
 
 @media screen and (max-width: 750px) {
-  .about .about-info {
+  #about .about-info {
     margin-left: 0.5rem;
   }
 }
 
-.about .about-info h2, .about .about-info p, .about .about-info a {
+#about .about-info h2, #about .about-info p, #about .about-info a {
   padding: 1rem;
 }
 
 @media screen and (max-width: 1050px) {
-  .about {
+  #about {
     padding: 1rem;
   }
-  .about img {
+  #about img {
     max-width: 350px;
   }
 }
 
 @media screen and (min-width: 1051px) {
-  .about {
+  #about {
     margin-bottom: 10vw;
   }
 }

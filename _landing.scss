@@ -55,9 +55,32 @@
         }
     }
 
+    .arrow-down {
+        position: absolute;
+        margin: 15vw auto;
+
+        .fas {
+            font-size: 3vw;
+            color: white;
+
+            &:hover {
+                color: darkorange;
+                animation: fly-up 1s;
+            }
+        }
+
+        @media screen and (max-width: 770px) {
+            margin: 50vw auto;
+
+            .fas {
+                font-size: 5vw;
+            }
+        }
+    }
+
 }
 
-.about {
+#about {
     // height: 100vh;
     display: flex;
     align-items: center;
