@@ -570,7 +570,8 @@ h1, h2, p {
 
 .contact-page {
   height: 100%;
-  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -596,8 +597,14 @@ h1, h2, p {
 }
 
 .contact-page .contact img {
-  max-width: 100%;
+  max-width: 500px;
   border-radius: 8px;
+}
+
+@media screen and (max-width: 700px) {
+  .contact-page .contact img {
+    max-width: 100%;
+  }
 }
 
 .contact-page .contact .contact-text {
@@ -819,6 +826,7 @@ h1, h2, p {
 @media screen and (min-width: 700px) {
   .contact-page {
     height: 100vh;
+    padding-top: 10vw;
   }
 }
 /*# sourceMappingURL=main.css.map */

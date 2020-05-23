@@ -2,7 +2,8 @@
     // background-color: $background;
     // background-image: url();
     height: 100%;
-    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
     display: flex;
     position: relative;
     background-size: cover;
@@ -21,8 +22,12 @@
         padding: 1rem;
 
         img {
-            max-width: 100%;
+            max-width: 500px;
             border-radius: 8px;
+
+            @media screen and (max-width: 700px) {
+                max-width: 100%;
+            }
         }
 
         .contact-text {
@@ -206,6 +211,7 @@
 
     @media screen and (min-width: 700px) {
         height: 100vh;
+        padding-top: 10vw;
     }
 }
 
