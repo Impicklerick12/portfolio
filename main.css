@@ -117,12 +117,6 @@ body {
   }
 }
 
-@media all and (orientation: landscape) {
-  #header {
-    width: 120%;
-  }
-}
-
 #footer {
   position: relative;
   display: -webkit-box;
