@@ -15,7 +15,28 @@
 
     .photos {
 
-        .photos-each {
+        .photo-slider {
+            display: flex;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scroll-snap-points-x: repeat(300px);
+            scroll-snap-type: mandatory;
+            margin: 16px;
+
+            div {
+                flex-shrink: 0;
+                max-width: 100%;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    .blogs {
+
+        .blogs-each {
             // border: $border;
             padding: 1rem;
             display: flex;

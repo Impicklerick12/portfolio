@@ -894,7 +894,30 @@ h1, h2, p {
   text-align: center;
 }
 
-.photography-page .photos .photos-each {
+.photography-page .photos .photo-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-scroll-snap-points-x: repeat(300px);
+      scroll-snap-points-x: repeat(300px);
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+  margin: 16px;
+}
+
+.photography-page .photos .photo-slider div {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  max-width: 100%;
+}
+
+.photography-page .photos .photo-slider div img {
+  max-width: 100%;
+}
+
+.photography-page .blogs .blogs-each {
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -913,27 +936,27 @@ h1, h2, p {
           box-shadow: 10px 10px 10px 0px #141414;
 }
 
-.photography-page .photos .photos-each img {
+.photography-page .blogs .blogs-each img {
   width: 100%;
 }
 
-.photography-page .photos .photos-each h2, .photography-page .photos .photos-each img, .photography-page .photos .photos-each p {
+.photography-page .blogs .blogs-each h2, .photography-page .blogs .blogs-each img, .photography-page .blogs .blogs-each p {
   padding: 1rem 0;
 }
 
-.photography-page .photos .photos-each a {
+.photography-page .blogs .blogs-each a {
   color: white;
   font-size: 1rem;
 }
 
 @media screen and (min-width: 700px) {
-  .photography-page .photos .photos-each {
+  .photography-page .blogs .blogs-each {
     max-width: 45vw;
   }
 }
 
 @media screen and (min-width: 990px) {
-  .photography-page .photos .photos-each {
+  .photography-page .blogs .blogs-each {
     max-width: 30vw;
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -941,7 +964,7 @@ h1, h2, p {
 }
 
 @media screen and (min-width: 700px) {
-  .photography-page .photos {
+  .photography-page .blogs {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
