@@ -138,7 +138,13 @@ body {
   overflow: hidden;
 }
 
-#footer a {
+#footer .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer .footer-links a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,16 +154,20 @@ body {
   text-decoration: none;
 }
 
-#footer a:hover {
+#footer .footer-links a:hover {
   color: darkorange;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
 @media screen and (max-width: 1050px) {
-  #footer a {
+  #footer .footer-links a {
     color: darkorange;
   }
+}
+
+#footer .copyright p {
+  color: lightgray;
 }
 
 #landing {
@@ -863,5 +873,14 @@ h1, h2, p {
     height: 100vh;
     padding-top: 10vw;
   }
+}
+
+.contact-page .contact-copyright {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-page .contact-copyright p {
+  color: lightgray;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,4 @@
 .contact-page {
-    // background-color: $background;
-    // background-image: url();
     height: 100%;
     max-width: 1000px;
     margin: 0 auto;
@@ -9,11 +7,6 @@
     background-size: cover;
     flex-direction: column;
     padding-top: 50px;
-
-    // h2 {
-    //     text-align: center;
-    //     padding-top: 1rem;
-    // }
 
     .contact {
         display: flex;
@@ -212,6 +205,15 @@
     @media screen and (min-width: 700px) {
         height: 100vh;
         padding-top: 10vw;
+    }
+
+    .contact-copyright {
+        text-align: center;
+        margin-bottom: 3rem;
+
+        p {
+            color: lightgray;
+        }
     }
 }
 

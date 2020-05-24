@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700;800;900&display=swap');
-// @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
 
 $phone-width: 600px;
@@ -144,22 +143,34 @@ body {
     z-index: 2;
     overflow: hidden;
 
-    a {
-      display: flex;
-      padding: 2rem;
-      color: white;
-      font-size: 2rem;
-      text-decoration: none;
+    .footer-links {
+        display: flex;
 
-      &:hover {
-          color: darkorange;
-          transition: .5s;
-      }
+
+        a {
+        display: flex;
+        padding: 2rem;
+        color: white;
+        font-size: 2rem;
+        text-decoration: none;
+
+        &:hover {
+            color: darkorange;
+            transition: .5s;
+        }
+        }
+
+        @media screen and (max-width: $desktop-above-width) {
+            a {
+                color: darkorange;
+            }
+        }
     }
 
-    @media screen and (max-width: $desktop-above-width) {
-        a {
-            color: darkorange;
+    .copyright {
+
+        p {
+            color: lightgray;
         }
     }
 }
