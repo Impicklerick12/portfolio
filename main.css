@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Volkhov:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +9,7 @@
 }
 
 h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Volkhov', serif;
 }
 
 h1 {
@@ -23,8 +21,8 @@ h2 {
 }
 
 p {
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 0.5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 body {
@@ -59,7 +57,7 @@ body {
   font-size: 20px;
   padding: 7px 13px;
   border-radius: 4px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Volkhov', serif;
 }
 
 #header ul li a.active, #header ul li a:hover {
@@ -302,7 +300,7 @@ body {
   padding: 10px 0;
   margin: 1rem 0 1rem 1rem;
   border-radius: 4px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Volkhov', serif;
   cursor: pointer;
   max-width: 50%;
   text-align: center;
@@ -731,7 +729,7 @@ h1, h2, p {
   border-radius: 4px;
   width: 100%;
   border-style: none;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   padding: 5px;
 }
@@ -754,31 +752,31 @@ h1, h2, p {
 }
 
 .contact-page .contact .contact-form .message textarea::-webkit-input-placeholder {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   letter-spacing: 0.5px;
 }
 
 .contact-page .contact .contact-form .message textarea:-ms-input-placeholder {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   letter-spacing: 0.5px;
 }
 
 .contact-page .contact .contact-form .message textarea::-ms-input-placeholder {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   letter-spacing: 0.5px;
 }
 
 .contact-page .contact .contact-form .message textarea::placeholder {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   letter-spacing: 0.5px;
 }
 
 .contact-page .contact .contact-form .message [type=text] {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   padding: 5px;
   letter-spacing: 0.5px;
@@ -794,7 +792,7 @@ h1, h2, p {
   padding: 1rem;
   border-radius: 4px;
   border-style: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Volkhov', serif;
   font-size: 16px;
   letter-spacing: 0.5px;
   cursor: pointer;

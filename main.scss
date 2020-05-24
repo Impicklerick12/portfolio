@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700;800;900&display=swap');
-// @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Volkhov:wght@400;700&display=swap');
 
 $phone-width: 600px;
 $tablet-width: 700px;
@@ -18,7 +15,7 @@ $background: #8CA7C2;
 }
 
 h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Volkhov', serif;
 }
 
 h1 {
@@ -30,8 +27,8 @@ h2 {
 }
 
 p {
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 0.5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 body {
@@ -66,7 +63,7 @@ body {
                 font-size: 20px;
                 padding: 7px 13px;
                 border-radius: 4px;
-                font-family: 'Montserrat', sans-serif;
+                font-family: 'Volkhov', serif;
 
                 &.active, &:hover {
                     background: #456276;
@@ -167,5 +164,5 @@ body {
 @import "landing";
 @import "web-dev";
 @import "blogs";
-@import "contact"
+@import "contact";
 
