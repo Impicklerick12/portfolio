@@ -4,8 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
 
 $phone-width: 600px;
-$tablet-width: 768px;
-$desktop-above-width: 992px;
+$tablet-width: 700px;
+$desktop-above-width: 1050px;
 $border: 2px solid red;
 $background: #8CA7C2;
 
@@ -90,7 +90,7 @@ body {
         display: none;
     }
 
-    @media (max-width: 1050px){
+    @media (max-width: $desktop-above-width){
 
         .checkbtn {
             display: block;
@@ -157,7 +157,7 @@ body {
       }
     }
 
-    @media screen and (max-width: 1050px) {
+    @media screen and (max-width: $desktop-above-width) {
         a {
             color: darkorange;
         }

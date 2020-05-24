@@ -6,7 +6,7 @@
     // height: calc(100vh - 3rem);
     display: flex;
     position: relative;
-    background-size: cover;
+    // background-size: cover;
     flex-direction: column;
     padding-top: 50px;
 
@@ -28,6 +28,7 @@
         .project1 {
             justify-content: space-between;
         }
+        
         .project1, .project2 {
             // border: $border;
             background-color: white;
@@ -41,7 +42,6 @@
 
             img {
                 width: 100%;
-                // max-height: 500px;
             }
 
             h2, img, p {
@@ -57,23 +57,6 @@
                 }
             }
         }
-
-        // @media screen and (min-width: 700px) {
-        //     display: flex;
-        //     flex-direction: row;
-        //     flex-wrap: wrap;
-        //     justify-content: center;
-
-        //     .project1, .project2 {
-        //         max-width: 45vw;
-        //     }
-        // }
-
-        // @media screen and (min-width: 1050px) {
-        //     .project1, .project2 {
-        //     max-width: 30vw;
-        //     }
-        // }
     }
 
     .skills {
@@ -111,7 +94,7 @@
         }
     }
 
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: $tablet-width) {
 
         .projects-text {
             max-width: 50vw;
@@ -141,7 +124,6 @@
             .skills-objects {
 
                 .objects {
-
                     margin: 5vw;
                     
                     img {
@@ -156,11 +138,7 @@
         }
     }
 
-    @media screen and (min-width: 1000px) {
-        height: calc(100vh - 3rem);
-    }
-
-    @media screen and (min-width: 1050px) {
+    @media screen and (min-width: $desktop-above-width) {
 
         .projects {
             .project1, .project2 {

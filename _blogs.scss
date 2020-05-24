@@ -1,11 +1,10 @@
 .blogs-page {
-    // background-color: lightblue;
-    background-image: url();
-    height: 100%;
-    width: 100%;
+    // background-image: url();
+    // height: 100%;
+    // width: 100%;
     display: flex;
     position: relative;
-    background-size: cover;
+    // background-size: cover;
     flex-direction: column;
     padding-top: 50px;
 
@@ -35,26 +34,34 @@
             }
 
             a {
-                color: white;
-                font-size: 1rem;
-            }
+                color: #233139;
+                font-size: 3rem;
 
-            @media screen and (min-width: 700px) {
-                max-width: 45vw;
-            }
-
-            @media screen and (min-width: 990px) {
-                max-width: 30vw;
-                justify-content: space-around;
+                &:hover {
+                    color: darkorange;
+                }
             }
         }
 
-        @media screen and (min-width: 700px) {
+        @media screen and (min-width: $tablet-width) {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
+
+            .blogs-each {
+                max-width: 45vw;
+            }
         }
+
+        @media screen and (min-width: $desktop-above-width) {
+            .blogs-each {
+                max-width: 30vw;
+                justify-content: space-around;
+                margin-bottom: 5rem;
+            }
+        }
+
     }
 }
 
