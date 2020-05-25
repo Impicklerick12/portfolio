@@ -40,24 +40,52 @@ The website elements are styled mostly using CSS flex-box, as I found it an incr
 ## Wireframes 
 
 ### Landing Page
-![desktop landing](docs/wireframes/landing-desktop.png "Desktop Landing Wireframe")
+
+<p float="left">
+  <img src="docs/wireframes/landing-desktop.png" width="300" /> 
+  <img src="docs/wireframes/landing-tablet.png" width="300" />
+  <img src="docs/wireframes/mobile-landing.png" width="200" />
+</p>
+
+<!-- ![desktop landing](docs/wireframes/landing-desktop.png "Desktop Landing Wireframe")
 ![desktop landing](docs/wireframes/landing-tablet.png "Desktop Landing Wireframe")
-![desktop landing](docs/wireframes/mobile-landing.png "Desktop Landing Wireframe")
+![desktop landing](docs/wireframes/mobile-landing.png "Desktop Landing Wireframe") -->
 
 ### Web-Dev Page
-![desktop landing](docs/wireframes/webdev-page.png "Desktop Landing Wireframe")
+
+<p float="left">
+  <img src="docs/wireframes/webdev-page.png" width="300" /> 
+  <img src="docs/wireframes/webdev-tablet.png" width="200" />
+  <img src="docs/wireframes/webdev-mobile.png" width="300" />
+</p>
+
+<!-- ![desktop landing](docs/wireframes/webdev-page.png "Desktop Landing Wireframe")
 ![desktop landing](docs/wireframes/webdev-tablet.png "Desktop Landing Wireframe")
-![desktop landing](docs/wireframes/webdev-mobile.png "Desktop Landing Wireframe")
+![desktop landing](docs/wireframes/webdev-mobile.png "Desktop Landing Wireframe") -->
 
 ### Blogs Page
-![desktop landing](docs/wireframes/blogs-desktop.png "Desktop Landing Wireframe")
+
+<p float="left">
+  <img src="docs/wireframes/blogs-desktop.png" width="300" /> 
+  <img src="docs/wireframes/blogs-tablet.png" width="200" />
+  <img src="docs/wireframes/blogs-mobile.png" width="300" />
+</p>
+
+<!-- ![desktop landing](docs/wireframes/blogs-desktop.png "Desktop Landing Wireframe")
 ![desktop landing](docs/wireframes/blogs-tablet.png "Desktop Landing Wireframe")
-![desktop landing](docs/wireframes/blogs-mobile.png "Desktop Landing Wireframe")
+![desktop landing](docs/wireframes/blogs-mobile.png "Desktop Landing Wireframe") -->
 
 ### Contact Page
-![desktop landing](docs/wireframes/contact-desktop.png "Desktop Landing Wireframe")
+
+<p float="left">
+  <img src="docs/wireframes/contact-desktop.png" width="400" /> 
+  <img src="docs/wireframes/contact-tablet.png" width="200" />
+  <img src="docs/wireframes/contact-mobile.png" width="140" />
+</p>
+
+<!-- ![desktop landing](docs/wireframes/contact-desktop.png "Desktop Landing Wireframe")
 ![desktop landing](docs/wireframes/contact-tablet.png "Desktop Landing Wireframe")
-![desktop landing](docs/wireframes/contact-mobile.png "Desktop Landing Wireframe")
+![desktop landing](docs/wireframes/contact-mobile.png "Desktop Landing Wireframe") -->
 #
 
 ## Sitemap
@@ -98,6 +126,7 @@ The website elements are styled mostly using CSS flex-box, as I found it an incr
   <img src="docs/screenshots/blogs-desktop.png" width="600" />
   <img src="docs/screenshots/contact-desktop.png" width="600" />
 </p>
+
 #
 
 ## Target Audience
