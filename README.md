@@ -25,27 +25,6 @@ Link to my GitHub repo - [https://github.com/Impicklerick12/portfolio](https://g
 
 ---
 
-## Purpose
+## Alternate Fonts Branch
 
-The purpose of building this website was to showcase my web development progress and use all the newly acquired skills of HTML and CSS(SASS). In todays world, a professional online body of work is essential for all creative industries, not only does it showcase your work but it also provides a platform for interested guests to communicate with you. This portfolio was built to highlight the projects I have already undertaken, but also to act as a base for furture enhancements as my tech stack grows. In time I will be expanding on this, adding new pages, changing the styling, and incorporating new frameworks. I would love add new content which includes my commercial photography work which I have previously showcased in a portfolio online.
-#
-
-## Functionality/Features
-
-The site was initially designed as a 4-page website, which includes a landing page, web development page, blogs page and contact page. Navigation through the pages is done using the page title icons on the header nav bar which is fixed to the top of the page. The nav bar is responsive to all devices, where the header links are styled into a hidden block list which can be accessed through the hamburger menu icon. The new navigation list is displayed full screen from the left using CSS animation and styling.
-
-The website elements are styled mostly using CSS flex-box, as I found it an incredibly versitile method for organisation. Each flex-box has a max-width value which will adjust according to the media quieres 
-#
-## Sitemap
-
-![portfolio sitemap](docs/sitemap.png "Porfolio Sitemap")
-#
-## Screenshots
-
-![trello day 1](docs/trello-day-1.png "Trello Board Day 1")
-
-## Target Audience
-
-## Tech Stack
-
-For this project, I utilised HTML5 and CSS to build and style my website. SASS was used as a CSS pre-processor, which was incredibly handy being able to reduce the written CSS. Flex-box was used to style and organise all elements on each page. The portfolio was deployed on Netlify.
+This branch was created to alter the fonts used across the website. I chose the serif style 'Volkhov' font as the main headings font, which I like quite a lot. The serif style does display a more professional style which I may push to the master repo. Also I changed the paragraph font to the google font 'Roboto' which has a nice clean structure. These fonts pair well together, and as I mentioned I may utilize them in the master repo.
