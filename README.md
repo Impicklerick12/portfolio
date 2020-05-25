@@ -54,7 +54,7 @@ This was designed to display multiple elements on the one page, and was great pr
  
 * Contact Page
 
-Designed so that guests can choose how they would like to communicate with me, whether it be through my social media links, or the contact form (unfortunately not active at the moment though).
+Designed so that guests can choose how they would like to communicate with me, whether it be through my social media links, or the contact form. Unfortunately the contact form does not work at the moment, this is my main focus in the near future to have this form active.
  
 SASS was utilized as the CSS pre-processor to style each web page of the portfolio. Although it was slightly difficult to understand its purpose initially, I found it greatly beneficial once I got the hang of the nested syntax. Being able to nest tags and classes within other tags provided a clear understanding of which element was being styled specifically. The things I wish to learn more about SASS is the extended use of mixins and partials. In my portfolio I created a partial scss file to style each page of my site, which would be imported into the main.scss file, however my code is not as DRY as I would have liked as I had not fully appreciated the usefulness of mixins. 
 #

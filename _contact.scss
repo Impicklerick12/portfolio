@@ -53,7 +53,7 @@
         }   
 
         .contact-form {
-            @mixin flex-column;
+            @include flex-column;
             justify-content: center;
             width: 100%;
             margin: 2rem 0;
@@ -105,14 +105,14 @@
                     color: white;
                     
                     &::placeholder {
-                        @mixin p-font;
+                        @include p-font;
                         font-size: 12px;
                         letter-spacing: 0.5px;
                     } 
                 }
 
                 [type=text] {
-                    @mixin p-font;
+                    @include p-font;
                     font-size: 12px;
                     padding: 5px;
                 }
@@ -127,20 +127,21 @@
                     padding: 1rem;
                     border-radius: 4px;
                     border-style: none;
-                    @mixin header-font;
+                    @include heading-font;
                     font-size: 16px;
                     letter-spacing: 0.5px;
                     cursor: pointer;
 
                     &:hover {
-                        @mixin icon-hover;
-                        color: #456276;
+                        background-color: darkorange;
+                        color:#456276;
+                        transition: 0.5s;
                     }
                 }
             }
         }
 
-        @media screen and (min-width: 700px) {
+        @media screen and (min-width: $tablet-width) {
 
             .image-and-text {
                 display: flex;
@@ -197,7 +198,7 @@
 
     @media screen and (min-width: $tablet-width) {
         height: 100vh;
-        padding-top: 10vw;
+        padding-top: 5vw;
     }
 
     .contact-copyright {

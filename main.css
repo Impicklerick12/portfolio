@@ -25,6 +25,7 @@ h2 {
 p {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 0.5px;
+  line-height: 25px;
 }
 
 body {
@@ -82,7 +83,7 @@ body {
   display: none;
 }
 
-@media (max-width: 1050px) {
+@media screen and (max-width: 1050px) {
   #header .checkbtn {
     display: block;
     margin-right: 40px;
@@ -305,6 +306,10 @@ body {
           box-shadow: 10px 10px 10px 0px #141414;
 }
 
+#about .about-info h2, #about .about-info p {
+  color: black;
+}
+
 #about .about-info .resume {
   color: white;
   background-color: #456276;
@@ -355,11 +360,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
   padding-top: 50px;
 }
 
@@ -413,6 +418,8 @@ body {
 
 .web-dev .projects .project1 .fab:hover, .web-dev .projects .project2 .fab:hover {
   color: darkorange;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .web-dev .skills {
@@ -519,10 +526,6 @@ body {
   }
 }
 
-h1, h2, p {
-  color: black;
-}
-
 @media screen and (min-width: 2000px) {
   #footer {
     position: fixed;
@@ -533,11 +536,11 @@ h1, h2, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
   padding-top: 50px;
 }
 
@@ -546,7 +549,6 @@ h1, h2, p {
 }
 
 .blogs-page .blogs .blogs-each {
-  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -554,6 +556,7 @@ h1, h2, p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -579,6 +582,8 @@ h1, h2, p {
 
 .blogs-page .blogs .blogs-each a:hover {
   color: darkorange;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 @media screen and (min-width: 700px) {
@@ -610,23 +615,11 @@ h1, h2, p {
   }
 }
 
-h1, h2, p {
-  color: black;
-}
-
 .contact-page {
+  padding: 1rem;
   height: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  background-size: cover;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   padding-top: 50px;
 }
 
@@ -766,33 +759,42 @@ h1, h2, p {
 
 .contact-page .contact .contact-form .message textarea::-webkit-input-placeholder {
   font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 25px;
   font-size: 12px;
   letter-spacing: 0.5px;
 }
 
 .contact-page .contact .contact-form .message textarea:-ms-input-placeholder {
   font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 25px;
   font-size: 12px;
   letter-spacing: 0.5px;
 }
 
 .contact-page .contact .contact-form .message textarea::-ms-input-placeholder {
   font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 25px;
   font-size: 12px;
   letter-spacing: 0.5px;
 }
 
 .contact-page .contact .contact-form .message textarea::placeholder {
   font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 25px;
   font-size: 12px;
   letter-spacing: 0.5px;
 }
 
 .contact-page .contact .contact-form .message [type=text] {
   font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 25px;
   font-size: 12px;
   padding: 5px;
-  letter-spacing: 0.5px;
 }
 
 .contact-page .contact .contact-form .submit-button {
@@ -814,8 +816,8 @@ h1, h2, p {
 .contact-page .contact .contact-form .submit-button .submit:hover {
   background-color: darkorange;
   color: #456276;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media screen and (min-width: 700px) {
@@ -872,7 +874,7 @@ h1, h2, p {
 @media screen and (min-width: 700px) {
   .contact-page {
     height: 100vh;
-    padding-top: 10vw;
+    padding-top: 5vw;
   }
 }
 

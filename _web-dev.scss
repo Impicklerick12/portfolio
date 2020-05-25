@@ -1,5 +1,5 @@
 .web-dev {
-    @mixin flex-column;
+    @include flex-column;
     position: relative;
     padding-top: 50px;
 
@@ -23,7 +23,7 @@
         }
         
         .project1, .project2 {
-            @mixin flex-column;
+            @include flex-column;
             align-items: center;
             background-color: white;
             border-radius: 8px;
@@ -44,7 +44,7 @@
                 font-size: 2rem;
 
                 &:hover {
-                    @mixin icon-hover;
+                    @include icon-hover;
                 }
             }
         }

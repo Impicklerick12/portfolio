@@ -1,5 +1,5 @@
 .blogs-page {
-    @mixin flex-column;
+    @include flex-column;
     position: relative;
     padding-top: 50px;
 
@@ -10,7 +10,7 @@
     .blogs {
 
         .blogs-each {
-            @mixin flex-column;
+            @include flex-column;
             padding: 1rem;
             align-items: center;
             margin: 1rem;
@@ -31,7 +31,7 @@
                 font-size: 3rem;
 
                 &:hover {
-                    @mixin icon-hover;
+                    @include icon-hover;
                 }
             }
         }

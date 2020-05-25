@@ -1,7 +1,9 @@
+// GOOGLE FONTS
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
 
+// VARIABLES
 $phone-width: 600px;
 $tablet-width: 700px;
 $desktop-above-width: 1050px;
@@ -9,13 +11,14 @@ $border: 2px solid red;
 $background: #8CA7C2;
 $box-shadow: 10px 10px 10px 0px rgba(20,20,20,1);
 
+// MIXINS
 @mixin heading-font {
     font-family: 'Montserrat', sans-serif;
 }
 @mixin p-font {
     font-family: 'Raleway', sans-serif;
     letter-spacing: 0.5px;
-    line-height: 30px;
+    line-height: 25px;
 }
 @mixin flex-column {
     display: flex;
@@ -35,7 +38,7 @@ $box-shadow: 10px 10px 10px 0px rgba(20,20,20,1);
 }
 
 h1, h2, h3 {
-    @mixin heading-font;
+    @include heading-font;
 }
 
 h1 {
@@ -47,7 +50,7 @@ h2 {
 }
 
 p {
-    @mixin p-font;
+    @include p-font;
 }
 
 body {
@@ -106,7 +109,7 @@ body {
         display: none;
     }
 
-    @media (max-width: $desktop-above-width){
+    @media screen and (max-width: $desktop-above-width) {
 
         .checkbtn {
             display: block;
