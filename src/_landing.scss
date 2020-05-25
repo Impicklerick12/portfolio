@@ -16,14 +16,36 @@
         color: darkorange;
     }
 
-    h1 {
-        font-size: 10vw;
-        font-weight: 600;
-        margin-bottom: 1rem;
-        text-align: center;
+    .typewriter {
 
-        @media screen and (min-width: 992px) {
+        h1 {
             font-size: 5vw;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-align: center;
+
+            @media screen and (min-width: 992px) {
+                font-size: 5vw;
+            }
+        }
+
+        overflow: hidden;
+        border-right: .3em solid darkorange;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .2em;
+        animation: 
+            typing 4s steps(40, end),
+            blink-caret .75s step-end infinite;
+        
+        @keyframes typing {
+        from { width: 0 }
+        to { width: 70% }
+        }
+
+        @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange; }
         }
     }
 

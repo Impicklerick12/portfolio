@@ -207,16 +207,62 @@ body {
   color: darkorange;
 }
 
-#landing h1 {
-  font-size: 10vw;
+#landing .typewriter {
+  overflow: hidden;
+  border-right: .3em solid darkorange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .2em;
+  -webkit-animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+          animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+#landing .typewriter h1 {
+  font-size: 5vw;
   font-weight: 600;
   margin-bottom: 1rem;
   text-align: center;
 }
 
 @media screen and (min-width: 992px) {
-  #landing h1 {
+  #landing .typewriter h1 {
     font-size: 5vw;
+  }
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
   }
 }
 
