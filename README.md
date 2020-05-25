@@ -36,16 +36,76 @@ The site was initially designed as a 4-page website, which includes a landing pa
 
 The website elements are styled mostly using CSS flex-box, as I found it an incredibly versitile method for organisation. Each flex-box has a max-width value which will adjust according to the media quieres 
 #
+
+## Wireframes 
+
+### Landing Page
+![desktop landing](docs/wireframes/landing-desktop.png "Desktop Landing Wireframe")
+![desktop landing](docs/wireframes/landing-tablet.png "Desktop Landing Wireframe")
+![desktop landing](docs/wireframes/mobile-landing.png "Desktop Landing Wireframe")
+
+### Web-Dev Page
+![desktop landing](docs/wireframes/webdev-page.png "Desktop Landing Wireframe")
+![desktop landing](docs/wireframes/webdev-tablet.png "Desktop Landing Wireframe")
+![desktop landing](docs/wireframes/webdev-mobile.png "Desktop Landing Wireframe")
+
+### Blogs Page
+![desktop landing](docs/wireframes/blogs-desktop.png "Desktop Landing Wireframe")
+![desktop landing](docs/wireframes/blogs-tablet.png "Desktop Landing Wireframe")
+![desktop landing](docs/wireframes/blogs-mobile.png "Desktop Landing Wireframe")
+
+### Contact Page
+![desktop landing](docs/wireframes/contact-desktop.png "Desktop Landing Wireframe")
+![desktop landing](docs/wireframes/contact-tablet.png "Desktop Landing Wireframe")
+![desktop landing](docs/wireframes/contact-mobile.png "Desktop Landing Wireframe")
+#
+
 ## Sitemap
 
 ![portfolio sitemap](docs/sitemap.png "Porfolio Sitemap")
 #
+
 ## Screenshots
+
+### Trello Screenshots
 
 ![trello day 1](docs/trello-day-1.png "Trello Board Day 1")
 
+![trello day 3](docs/trello-day-3.png "Trello Board Day 3")
+
+### Mobile Screenshots
+
+<p float="left">
+  <img src="docs/screenshots/landing-mobile.png" width="200" /> 
+  <img src="docs/screenshots/contact-mobile.png" width="200" />
+  <img src="docs/screenshots/projects-mobile.png" width="200" />
+</p>
+
+### Tablet Screenshots
+
+<p float="left">
+  <img src="docs/screenshots/landing-tablet.png" width="400" alt="landing-tablet"/> 
+  <img src="docs/screenshots/webdev-tablet.png" width="400" />
+  <img src="docs/screenshots/blogs-tablet.png" width="400" />
+  <img src="docs/screenshots/contact-tablet.png" width="400" />
+</p>
+
+### Desktop Screenshots
+
+<p float="left">
+  <img src="docs/screenshots/landing-desktop.png" width="600" alt="landing-tablet"/> 
+  <img src="docs/screenshots/webdev-desktop.png" width="600" />
+  <img src="docs/screenshots/blogs-desktop.png" width="600" />
+  <img src="docs/screenshots/contact-desktop.png" width="600" />
+</p>
+#
+
 ## Target Audience
+
+This website was created to represent my web development body of work. It’s purpose is to display all relevant skills and projects undertaken, as well as giving the guest an insight into my personality and interests. My portfolio is targeted at potential employers, clients, peers and family, and any other professionals looking to assess my body of work. 
+#
 
 ## Tech Stack
 
 For this project, I utilised HTML5 and CSS to build and style my website. SASS was used as a CSS pre-processor, which was incredibly handy being able to reduce the written CSS. Flex-box was used to style and organise all elements on each page. The portfolio was deployed on Netlify.
+#

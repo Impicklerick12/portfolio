@@ -148,7 +148,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2rem;
+  padding: 1.5rem;
   color: white;
   font-size: 2rem;
   text-decoration: none;
@@ -168,6 +168,7 @@ body {
 
 #footer .copyright p {
   color: lightgray;
+  font-size: 12px;
 }
 
 #landing {
