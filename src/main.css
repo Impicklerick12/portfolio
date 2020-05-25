@@ -242,6 +242,78 @@ body {
   color: darkorange;
   -webkit-transition: .5s;
   transition: .5s;
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+}
+
+@-webkit-keyframes shake {
+  10% {
+    -webkit-transform: scale(1.2) translate(0px, -5px) rotate(-5deg);
+            transform: scale(1.2) translate(0px, -5px) rotate(-5deg);
+  }
+  15% {
+    -webkit-transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+            transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+  }
+  30% {
+    -webkit-transform: scale(1.2) translate(5px, -5px) rotate(5deg);
+            transform: scale(1.2) translate(5px, -5px) rotate(5deg);
+  }
+  45% {
+    -webkit-transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+            transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+  }
+  60% {
+    -webkit-transform: scale(1.2) translate(0px, -5px) rotate(-5deg);
+            transform: scale(1.2) translate(0px, -5px) rotate(-5deg);
+  }
+  75% {
+    -webkit-transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+            transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+  }
+  90% {
+    -webkit-transform: scale(1.2) translate(5px, -5px) rotate(5deg);
+            transform: scale(1.2) translate(5px, -5px) rotate(5deg);
+  }
+  100% {
+    -webkit-transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+            transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+  }
+}
+
+@keyframes shake {
+  10% {
+    -webkit-transform: scale(1.2) translate(0px, -5px) rotate(-5deg);
+            transform: scale(1.2) translate(0px, -5px) rotate(-5deg);
+  }
+  15% {
+    -webkit-transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+            transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+  }
+  30% {
+    -webkit-transform: scale(1.2) translate(5px, -5px) rotate(5deg);
+            transform: scale(1.2) translate(5px, -5px) rotate(5deg);
+  }
+  45% {
+    -webkit-transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+            transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+  }
+  60% {
+    -webkit-transform: scale(1.2) translate(0px, -5px) rotate(-5deg);
+            transform: scale(1.2) translate(0px, -5px) rotate(-5deg);
+  }
+  75% {
+    -webkit-transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+            transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+  }
+  90% {
+    -webkit-transform: scale(1.2) translate(5px, -5px) rotate(5deg);
+            transform: scale(1.2) translate(5px, -5px) rotate(5deg);
+  }
+  100% {
+    -webkit-transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+            transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -427,6 +499,43 @@ body {
   color: darkorange;
   -webkit-transition: .5s;
   transition: .5s;
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+}
+
+@keyframes shake {
+  10% {
+    -webkit-transform: scale(1.2) translate(0px, -5px) rotate(-5deg);
+            transform: scale(1.2) translate(0px, -5px) rotate(-5deg);
+  }
+  15% {
+    -webkit-transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+            transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+  }
+  30% {
+    -webkit-transform: scale(1.2) translate(5px, -5px) rotate(5deg);
+            transform: scale(1.2) translate(5px, -5px) rotate(5deg);
+  }
+  45% {
+    -webkit-transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+            transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+  }
+  60% {
+    -webkit-transform: scale(1.2) translate(0px, -5px) rotate(-5deg);
+            transform: scale(1.2) translate(0px, -5px) rotate(-5deg);
+  }
+  75% {
+    -webkit-transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+            transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+  }
+  90% {
+    -webkit-transform: scale(1.2) translate(5px, -5px) rotate(5deg);
+            transform: scale(1.2) translate(5px, -5px) rotate(5deg);
+  }
+  100% {
+    -webkit-transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+            transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+  }
 }
 
 .web-dev .skills {
@@ -596,6 +705,43 @@ body {
   color: darkorange;
   -webkit-transition: .5s;
   transition: .5s;
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+}
+
+@keyframes shake {
+  10% {
+    -webkit-transform: scale(1.2) translate(0px, -5px) rotate(-5deg);
+            transform: scale(1.2) translate(0px, -5px) rotate(-5deg);
+  }
+  15% {
+    -webkit-transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+            transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+  }
+  30% {
+    -webkit-transform: scale(1.2) translate(5px, -5px) rotate(5deg);
+            transform: scale(1.2) translate(5px, -5px) rotate(5deg);
+  }
+  45% {
+    -webkit-transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+            transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+  }
+  60% {
+    -webkit-transform: scale(1.2) translate(0px, -5px) rotate(-5deg);
+            transform: scale(1.2) translate(0px, -5px) rotate(-5deg);
+  }
+  75% {
+    -webkit-transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+            transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+  }
+  90% {
+    -webkit-transform: scale(1.2) translate(5px, -5px) rotate(5deg);
+            transform: scale(1.2) translate(5px, -5px) rotate(5deg);
+  }
+  100% {
+    -webkit-transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+            transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -699,6 +845,43 @@ body {
   color: darkorange;
   -webkit-transition: .5s;
   transition: .5s;
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+}
+
+@keyframes shake {
+  10% {
+    -webkit-transform: scale(1.2) translate(0px, -5px) rotate(-5deg);
+            transform: scale(1.2) translate(0px, -5px) rotate(-5deg);
+  }
+  15% {
+    -webkit-transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+            transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+  }
+  30% {
+    -webkit-transform: scale(1.2) translate(5px, -5px) rotate(5deg);
+            transform: scale(1.2) translate(5px, -5px) rotate(5deg);
+  }
+  45% {
+    -webkit-transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+            transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+  }
+  60% {
+    -webkit-transform: scale(1.2) translate(0px, -5px) rotate(-5deg);
+            transform: scale(1.2) translate(0px, -5px) rotate(-5deg);
+  }
+  75% {
+    -webkit-transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+            transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+  }
+  90% {
+    -webkit-transform: scale(1.2) translate(5px, -5px) rotate(5deg);
+            transform: scale(1.2) translate(5px, -5px) rotate(5deg);
+  }
+  100% {
+    -webkit-transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+            transform: scale(1.2) translate(0px, 0px) rotate(0deg);
+  }
 }
 
 .contact-page .contact .contact-form {

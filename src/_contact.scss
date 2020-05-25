@@ -46,6 +46,7 @@
                     &:hover {
                         color: darkorange;
                         transition: .5s;
+                        @include shake;
                     }
             
                 }

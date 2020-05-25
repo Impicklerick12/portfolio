@@ -45,6 +45,7 @@
         &:hover {
             color: darkorange;
             transition: .5s;
+            @include shake;
         }
 
         @media screen and (min-width: 992px) {

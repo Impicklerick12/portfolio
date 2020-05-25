@@ -33,6 +33,20 @@ $box-shadow: 10px 10px 10px 0px rgba(20,20,20,1);
     color: darkorange;
     transition: .5s;
 }
+@mixin shake {
+    animation: shake 0.5s;
+
+    @keyframes shake {
+    10% { transform: scale(1.2) translate(0px, -5px) rotate(-5deg); }
+    15% { transform: scale(1.2) translate(0px, 0px) rotate(0deg); }
+    30% { transform: scale(1.2) translate(5px, -5px) rotate(5deg); }
+    45% { transform: scale(1.2) translate(0px, 0px) rotate(0deg); }
+    60% { transform: scale(1.2) translate(0px, -5px) rotate(-5deg); }
+    75% { transform: scale(1.2) translate(0px, 0px) rotate(0deg); }
+    90% { transform: scale(1.2) translate(5px, -5px) rotate(5deg); }
+    100% { transform: scale(1.2) translate(0px, 0px) rotate(0deg); }
+    }
+}
 
 * {
     margin: 0;
