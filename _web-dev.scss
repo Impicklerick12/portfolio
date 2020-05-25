@@ -5,7 +5,6 @@
 
     .projects-text {
         h1, p {
-            // border: $border;
             padding: 1rem;
         }
 
@@ -51,7 +50,6 @@
     }
 
     .skills {
-        // border: $border;
         text-align: center;
         padding-top: 1rem;
 
@@ -73,11 +71,13 @@
                 .fab {
                     font-size: 50px;
                 }
+
                 img {
                     max-width: 9vw;
                 }
+
                 h3 {
-                    font-size: 3vw;
+                    font-size: 16px;
                     font-weight: 600;
                     color: white;
                 }
@@ -97,6 +97,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
+            margin-top: 1rem;
 
             .project1, .project2 {
                 max-width: 45vw;
@@ -112,6 +113,10 @@
 
         .skills {
 
+            h1 {
+                margin-top: 1rem;
+            }
+
             .skills-objects {
 
                 .objects {
@@ -122,7 +127,8 @@
                     }
 
                     h3 {
-                        font-size: 25px;
+                        font-size: 20px;
+                        margin-top: 1rem;
                     }
                 }
             }
@@ -132,6 +138,7 @@
     @media screen and (min-width: $desktop-above-width) {
 
         .projects {
+
             .project1, .project2 {
                 max-width: 30vw;
                 padding: 20px;
@@ -143,13 +150,17 @@
         }
 
         .skills {
+
             h1 {
                 margin-top: 2rem;
             }
+
             .skills-objects {
                 justify-content: center;
+
                 .objects {
                     margin: 3vw 4vw;
+
                     img {
                         max-width: 50px;
                     }

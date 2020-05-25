@@ -58,6 +58,7 @@ p {
     @include p-font;
 }
 
+// BACKGROUND IMAGE ON ALL PAGES
 body {
     background: url(./docs/waterfall_website.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -114,6 +115,7 @@ body {
         display: none;
     }
 
+    // HIDDEN NAV MENU IN TABLET AND PHONE WIDTH
     @media screen and (max-width: $desktop-above-width) {
 
         .checkbtn {
@@ -193,7 +195,6 @@ body {
     }
 
     .copyright {
-
         p {
             color: lightgray;
             font-size: 12px;

@@ -466,7 +466,7 @@ body {
 }
 
 .web-dev .skills .skills-objects .objects h3 {
-  font-size: 3vw;
+  font-size: 16px;
   font-weight: 600;
   color: white;
 }
@@ -489,6 +489,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 1rem;
   }
   .web-dev .projects .project1, .web-dev .projects .project2 {
     max-width: 45vw;
@@ -497,6 +498,9 @@ body {
     padding-bottom: 20px;
     background-color: #1b1b1b;
   }
+  .web-dev .skills h1 {
+    margin-top: 1rem;
+  }
   .web-dev .skills .skills-objects .objects {
     margin: 5vw;
   }
@@ -504,7 +508,8 @@ body {
     max-width: 5vw;
   }
   .web-dev .skills .skills-objects .objects h3 {
-    font-size: 25px;
+    font-size: 20px;
+    margin-top: 1rem;
   }
 }
 
