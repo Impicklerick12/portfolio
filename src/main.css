@@ -36,7 +36,7 @@ p {
 }
 
 body {
-  background: url(./docs/waterfall_website.jpg) no-repeat center center fixed;
+  background: url(../docs/waterfall_website.jpg) no-repeat center center fixed;
   background-size: cover;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   scroll-behavior: smooth;
@@ -263,8 +263,8 @@ body {
 
 #landing .arrow-down .fas:hover {
   color: darkorange;
-  -webkit-animation: fly-up 1s;
-          animation: fly-up 1s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 @media screen and (max-width: 770px) {

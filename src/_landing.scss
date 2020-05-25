@@ -62,8 +62,7 @@
             color: white;
 
             &:hover {
-                color: darkorange;
-                animation: fly-up 1s;
+                @include icon-hover;
             }
         }
 
