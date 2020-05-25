@@ -7,6 +7,23 @@ $tablet-width: 700px;
 $desktop-above-width: 1050px;
 $border: 2px solid red;
 $background: #8CA7C2;
+$box-shadow: 10px 10px 10px 0px rgba(20,20,20,1);
+
+@mixin heading-font {
+    font-family: 'Montserrat', sans-serif;
+}
+@mixin p-font {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.5px;
+}
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin icon-hover {
+    color: darkorange;
+    transition: .5s;
+}
 
 * {
     margin: 0;
@@ -17,7 +34,7 @@ $background: #8CA7C2;
 }
 
 h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif;
+    @mixin heading-font;
 }
 
 h1 {
@@ -29,8 +46,7 @@ h2 {
 }
 
 p {
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 0.5px;
+    @mixin p-font;
 }
 
 body {
@@ -117,7 +133,7 @@ body {
                     color: darkorange;
                     font-weight: 600;
 
-                    &:hover,&.active {
+                    &:hover, &.active {
                         background: none;
                         color: #456276;
                     }
@@ -179,5 +195,5 @@ body {
 @import "landing";
 @import "web-dev";
 @import "blogs";
-@import "contact"
+@import "contact";
 

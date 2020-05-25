@@ -1,11 +1,8 @@
 .contact-page {
+    padding: 1rem;
     height: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    display: flex;
-    position: relative;
-    background-size: cover;
-    flex-direction: column;
     padding-top: 50px;
 
     .contact {
@@ -18,7 +15,7 @@
             max-width: 500px;
             border-radius: 8px;
 
-            @media screen and (max-width: 700px) {
+            @media screen and (max-width: $tablet-width) {
                 max-width: 100%;
             }
         }
@@ -31,7 +28,7 @@
             padding: 1rem 1rem;
             margin-top: 1rem;
             border-radius: 8px;
-            box-shadow: 10px 10px 10px 0px rgba(20,20,20,1);
+            box-shadow: $box-shadow;
 
             p {
                 padding: 1rem 0;
@@ -56,15 +53,14 @@
         }   
 
         .contact-form {
-            display: flex;
-            flex-direction: column;
+            @mixin flex-column;
             justify-content: center;
             width: 100%;
             margin: 2rem 0;
             background-color: white;
             padding: 2rem 0;
             border-radius: 8px;
-            box-shadow: 10px 10px 10px 0px rgba(20,20,20,1);
+            box-shadow: $box-shadow;
 
             .info {
                 display: flex;
@@ -81,7 +77,6 @@
                 }
 
                 input[type=text] {
-                    // margin-right: 0px;
                     background-color: #233139;
                     color: white;
                     padding: 5px 10px;
@@ -110,17 +105,16 @@
                     color: white;
                     
                     &::placeholder {
-                        font-family: 'Raleway', sans-serif;
+                        @mixin p-font;
                         font-size: 12px;
                         letter-spacing: 0.5px;
                     } 
                 }
 
                 [type=text] {
-                    font-family: 'Raleway', sans-serif;
+                    @mixin p-font;
                     font-size: 12px;
                     padding: 5px;
-                    letter-spacing: 0.5px;
                 }
             }
 
@@ -128,21 +122,20 @@
                 text-align: center;
 
                 .submit {
-                background-color: #456276;
-                color: white;
-                padding: 1rem;
-                border-radius: 4px;
-                border-style: none;
-                font-family: 'Montserrat', sans-serif;
-                font-size: 16px;
-                letter-spacing: 0.5px;
-                cursor: pointer;
+                    background-color: #456276;
+                    color: white;
+                    padding: 1rem;
+                    border-radius: 4px;
+                    border-style: none;
+                    @mixin header-font;
+                    font-size: 16px;
+                    letter-spacing: 0.5px;
+                    cursor: pointer;
 
-                &:hover {
-                    background-color: darkorange;
-                    color: #456276;
-                    transition: .5s;
-                }
+                    &:hover {
+                        @mixin icon-hover;
+                        color: #456276;
+                    }
                 }
             }
         }
@@ -202,7 +195,7 @@
 
     }
 
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: $tablet-width) {
         height: 100vh;
         padding-top: 10vw;
     }

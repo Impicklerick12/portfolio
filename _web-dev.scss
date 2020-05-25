@@ -1,13 +1,6 @@
 .web-dev {
-    // background-color: $background;
-    // background-image: url();
-    // height: 100%;
-    // width: 100%;
-    // height: calc(100vh - 3rem);
-    display: flex;
+    @mixin flex-column;
     position: relative;
-    // background-size: cover;
-    flex-direction: column;
     padding-top: 50px;
 
     .projects-text {
@@ -30,15 +23,13 @@
         }
         
         .project1, .project2 {
-            // border: $border;
+            @mixin flex-column;
+            align-items: center;
             background-color: white;
             border-radius: 8px;
             padding: 1rem;
             margin: 1rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            box-shadow: 10px 10px 10px 0px rgba(20,20,20,1);
+            box-shadow: $box-shadow;
 
             img {
                 width: 100%;
@@ -53,7 +44,7 @@
                 font-size: 2rem;
 
                 &:hover {
-                    color: darkorange;
+                    @mixin icon-hover;
                 }
             }
         }

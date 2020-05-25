@@ -380,10 +380,6 @@ body {
 }
 
 .web-dev .projects .project1, .web-dev .projects .project2 {
-  background-color: white;
-  border-radius: 8px;
-  padding: 1rem;
-  margin: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,6 +390,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem;
   -webkit-box-shadow: 10px 10px 10px 0px #141414;
           box-shadow: 10px 10px 10px 0px #141414;
 }
