@@ -14,11 +14,16 @@ $box-shadow: 10px 10px 10px 0px rgba(20,20,20,1);
 // MIXINS
 @mixin heading-font {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 @mixin p-font {
     font-family: 'Raleway', sans-serif;
     letter-spacing: 0.5px;
     line-height: 25px;
+
+    @media screen and (max-width: 900px) {
+        font-size: 14px;
+    }
 }
 @mixin flex-column {
     display: flex;

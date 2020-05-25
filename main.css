@@ -12,6 +12,7 @@
 
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 h1 {
@@ -26,6 +27,12 @@ p {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 0.5px;
   line-height: 25px;
+}
+
+@media screen and (max-width: 900px) {
+  p {
+    font-size: 14px;
+  }
 }
 
 body {
@@ -298,7 +305,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 300px;
+  max-width: 350px;
   margin: 1rem;
   background-color: white;
   border-radius: 8px;
@@ -316,7 +323,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   padding: 10px 0;
-  margin: 1rem 0 1rem 1rem;
+  margin: 0 0 1rem 2rem;
   border-radius: 4px;
   font-family: 'Montserrat', sans-serif;
   cursor: pointer;
@@ -789,12 +796,33 @@ body {
   letter-spacing: 0.5px;
 }
 
+@media screen and (max-width: 900px) {
+  .contact-page .contact .contact-form .message textarea::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .contact-page .contact .contact-form .message textarea:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .contact-page .contact .contact-form .message textarea::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .contact-page .contact .contact-form .message textarea::placeholder {
+    font-size: 14px;
+  }
+}
+
 .contact-page .contact .contact-form .message [type=text] {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 0.5px;
   line-height: 25px;
   font-size: 12px;
   padding: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  .contact-page .contact .contact-form .message [type=text] {
+    font-size: 14px;
+  }
 }
 
 .contact-page .contact .contact-form .submit-button {
@@ -808,6 +836,7 @@ body {
   border-radius: 4px;
   border-style: none;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   font-size: 16px;
   letter-spacing: 0.5px;
   cursor: pointer;
