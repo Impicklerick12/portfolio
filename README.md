@@ -40,19 +40,19 @@ My aim was to make a simple website that was functional and incorporated my alte
  
 The pages of my portfolio include:
  
-* Landing Page
+* ### Landing Page
 
 Designed as an eye-catching visual experience from the first time a guest enters the site. A full-screen photo is used as the body's background for the entire site, with all elements scrolling over the top. The landing page also combines the use of a scroll icon and smooth scrolling activated, which links to my about section. A link to my resume pdf is placed at the bottom of the landing page for any interested guests to access easily.
 
- * Web Development Page 
+ * ### Web Development Page 
 
 Showcases my current programming skills and projects undertaken at Coder Academy. This was designed to include two large flex-boxes containing information and links to each project, as well as a skills section at the bottom which highlights my current tech stack.
  
-* Blogs Page
+* ### Blogs Page
 
 This was designed to display multiple elements on the one page, and was great practice in utilizing the flex-direction property to alter according to the media queries. Each blog contains a title, placeholder text, a date, and an image used from www.unsplash.com.
  
-* Contact Page
+* ### Contact Page
 
 Designed so that guests can choose how they would like to communicate with me, whether it be through my social media links, or the contact form. Unfortunately the contact form does not work at the moment, this is my main focus in the near future to have this form active.
  
