@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
 
 $phone-width: 600px;
-$tablet-width: 768px;
+$tablet-width: 700px;
 $desktop-above-width: 992px;
 $border: 2px solid red;
 $background: #8CA7C2;
@@ -46,7 +46,7 @@ body {
 
 #header {
     position: fixed;
-    background: #233139;
+    // background: #233139; No header background
     height: 50px;
     width: 100%;
     z-index: 1;
@@ -65,12 +65,18 @@ body {
                 font-weight: 500;
                 font-size: 20px;
                 padding: 7px 13px;
-                border-radius: 4px;
                 font-family: 'Montserrat', sans-serif;
 
-                &.active, &:hover {
-                    background: #456276;
+                &.active {
+                    // background: #456276;
+                    // border-top: 2px solid white; 
+                    border-bottom: 2px solid white; 
                     transition: .5s;
+                    opacity: 50%;
+                }
+
+                &:hover {
+                    border-bottom: 2px solid darkorange;
                 }
             }
         }
@@ -168,5 +174,4 @@ body {
 @import "web-dev";
 @import "blogs";
 @import "contact";
-@import "photography";
 
