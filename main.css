@@ -382,12 +382,12 @@ body {
 
 .web-dev .projects-text h1, .web-dev .projects-text p {
   padding: 1rem;
+  color: white;
 }
 
 .web-dev .projects-text h1 {
   text-align: center;
   margin-top: 16px;
-  color: white;
 }
 
 .web-dev .projects .project1 {
