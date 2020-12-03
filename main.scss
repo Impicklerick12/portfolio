@@ -44,6 +44,24 @@ body {
     scroll-behavior: smooth;
 }
 
+.disclaimer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    height: 60px;
+    top: 50px;
+    width: 100vw;
+    opacity: 50%;
+    
+    h3 {
+        font-size: 12px;
+        font-weight: 400;
+        color: white;
+    }
+}
+
 #header {
     position: fixed;
     // background: #233139; No header background
